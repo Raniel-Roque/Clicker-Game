@@ -128,5 +128,41 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle_BG_Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_Click_Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_Click_Main_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle_BG_Money_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ractangle_Home_Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle_BG_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniG_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shop_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achieve_Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

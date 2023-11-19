@@ -26,6 +26,8 @@ Partial Class Shop
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.HomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UP1 = New System.Windows.Forms.Button()
+        Me.UP2 = New System.Windows.Forms.Button()
+        Me.UP3 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,12 +68,40 @@ Partial Class Shop
         Me.UP1.Text = "UP1"
         Me.UP1.UseVisualStyleBackColor = False
         '
+        'UP2
+        '
+        Me.UP2.BackColor = System.Drawing.Color.Cornsilk
+        Me.UP2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.UP2.FlatAppearance.BorderSize = 2
+        Me.UP2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP2.Location = New System.Drawing.Point(118, 40)
+        Me.UP2.Name = "UP2"
+        Me.UP2.Size = New System.Drawing.Size(100, 75)
+        Me.UP2.TabIndex = 9
+        Me.UP2.Text = "UP2"
+        Me.UP2.UseVisualStyleBackColor = False
+        '
+        'UP3
+        '
+        Me.UP3.BackColor = System.Drawing.Color.Cornsilk
+        Me.UP3.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.UP3.FlatAppearance.BorderSize = 2
+        Me.UP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP3.Location = New System.Drawing.Point(224, 40)
+        Me.UP3.Name = "UP3"
+        Me.UP3.Size = New System.Drawing.Size(100, 75)
+        Me.UP3.TabIndex = 10
+        Me.UP3.Text = "UP3"
+        Me.UP3.UseVisualStyleBackColor = False
+        '
         'Shop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.RosyBrown
         Me.ClientSize = New System.Drawing.Size(346, 411)
+        Me.Controls.Add(Me.UP3)
+        Me.Controls.Add(Me.UP2)
         Me.Controls.Add(Me.UP1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Shop"
@@ -86,5 +116,7 @@ Partial Class Shop
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents HomeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UP1 As Button
+    Public WithEvents UP1 As Button
+    Public WithEvents UP2 As Button
+    Public WithEvents UP3 As Button
 End Class
