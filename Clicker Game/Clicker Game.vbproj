@@ -164,5 +164,20 @@
   <ItemGroup>
     <None Include="Resources\Achieve_Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle_Shop_Type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle_Back_Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

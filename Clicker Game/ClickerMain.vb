@@ -27,7 +27,6 @@ Public Class ClickerMain
 
         GData.Display()
     End Sub
-
     Private Sub MainButton_Click(sender As Object, e As EventArgs) Handles MainButton.Click
         MainButton.Image = My.Resources.Cat_Click_Main_2
     End Sub
@@ -73,20 +72,24 @@ Public Class ClickerMain
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
         MessageBox.Show("Home")
     End Sub
-    Private Sub Home_Hover(sender As Object, e As EventArgs) Handles Home.MouseHover
+    Private Sub Home_Enter(sender As Object, e As EventArgs) Handles Home.MouseEnter
         Home.BackColor = Color.FromArgb(252, 215, 215)
     End Sub
-    Private Sub Home_NotHover(sender As Object, e As EventArgs) Handles Home.MouseLeave
+    Private Sub Home_NotEnter(sender As Object, e As EventArgs) Handles Home.MouseLeave
         Home.BackColor = Color.FromArgb(252, 228, 228)
     End Sub
 
     Private Sub Settings_Click(sender As Object, e As EventArgs) Handles Settings.Click
         MessageBox.Show("Settings")
     End Sub
-    Private Sub Settings_Hover(sender As Object, e As EventArgs) Handles Settings.MouseHover
+    Private Sub Settings_Enter(sender As Object, e As EventArgs) Handles Settings.MouseEnter
         Settings.BackColor = Color.FromArgb(252, 215, 215)
     End Sub
-    Private Sub Settings_NotHover(sender As Object, e As EventArgs) Handles Settings.MouseLeave
+    Private Sub Settings_NotEnter(sender As Object, e As EventArgs) Handles Settings.MouseLeave
         Settings.BackColor = Color.FromArgb(252, 228, 228)
+    End Sub
+
+    Private Sub MainButton_Enter(sender As Object, e As EventArgs)
+
     End Sub
 End Class

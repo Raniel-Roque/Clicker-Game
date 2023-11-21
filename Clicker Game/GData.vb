@@ -1,15 +1,17 @@
 ﻿Module GData
+    'Save State
+
     'Main Money
-    Public Money As ULong = 500UL
+    Public Money As ULong = 1UL
     Public Click As ULong = 1UL
 
     'Upgrades
-    Public Costs() = {25, 100, 500}
+    Public Costs() = {10, 100, 250}
     Public Max() = {False, False, False}
     Public Level() = {0, 0, 0}
-    Public AutoClickValue() = {0UL}
+    Public AutoClickValue() = {2UL}
 
-    'Functions
+    'Global Functions
     Public Sub Clicker(ByVal Click_Count As Integer)
         If Click < ULong.MaxValue Then
             Click += Click_Count

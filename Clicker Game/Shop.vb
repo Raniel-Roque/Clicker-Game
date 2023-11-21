@@ -2,6 +2,8 @@
 
 Public Class Shop
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DisposeMe.Dispose()
+
         For i As Integer = 0 To Max.Length - 1
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
             If Max(i) = True OrElse Level(i) >= ULong.MaxValue Then
@@ -20,7 +22,7 @@ Public Class Shop
     Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
     End Sub
-    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HomeToolStripMenuItem.Click
+    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs)
         ClickerMain.Show()
         Me.Close()
     End Sub
@@ -64,7 +66,6 @@ Public Class Shop
             Money -= Costs(Index)
             Level(Index) += 1UL
             UPButt.Text = String.Format("{0} - {1} Level: {2:N0} / 10", Upgrade_Name, Costs(Index), Level(Index))
-            AutoClick_Timer.Enabled = True
             GData.Display()
             Return
         ElseIf Money - Costs(Index) >= 0 Then
@@ -89,5 +90,16 @@ Public Class Shop
     End Sub
     Private Sub UP3_Click(sender As Object, e As EventArgs) Handles UP3.Click
         AutoClickUpgrade_Speed(ClickerMain.AutoClick_1, UP3, "Upgrade_3", 2, 100)
+    End Sub
+
+    Private Sub DisplayLoop_Tick(sender As Object, e As EventArgs) Handles DisplayLoop.Tick
+        If Money < ULong.MaxValue Then
+            TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
+        Else
+            TopMoneyLabel.Text = "Maxed Cash! Ascend Now!"
+            GData.Money = ULong.MaxValue
+            GData.Click = ULong.MaxValue
+            GData.Max(0) = True
+        End If
     End Sub
 End Class

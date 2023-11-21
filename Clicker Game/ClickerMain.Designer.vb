@@ -30,6 +30,7 @@ Partial Class ClickerMain
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BotMoneyLabel = New System.Windows.Forms.TextBox()
+        Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Shop = New System.Windows.Forms.Button()
@@ -44,7 +45,6 @@ Partial Class ClickerMain
         Me.MoneyBorder = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,7 +100,7 @@ Partial Class ClickerMain
         '
         'BotMoneyLabel
         '
-        Me.BotMoneyLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.BotMoneyLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
         Me.BotMoneyLabel.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BotMoneyLabel.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BotMoneyLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -112,6 +112,20 @@ Partial Class ClickerMain
         Me.BotMoneyLabel.TabIndex = 15
         Me.BotMoneyLabel.Text = "18,446,744,073,709,551,615"
         Me.BotMoneyLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'DisposeMe
+        '
+        Me.DisposeMe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.DisposeMe.Location = New System.Drawing.Point(0, 59)
+        Me.DisposeMe.MaxLength = 0
+        Me.DisposeMe.Name = "DisposeMe"
+        Me.DisposeMe.ReadOnly = True
+        Me.DisposeMe.Size = New System.Drawing.Size(19, 20)
+        Me.DisposeMe.TabIndex = 0
+        Me.DisposeMe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button2
         '
@@ -279,33 +293,19 @@ Partial Class ClickerMain
         '
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PictureBox2.Image = Global.Clicker_Game.My.Resources.Resources.Ractangle_Home_Bottom
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 394)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 398)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(344, 113)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
-        'DisposeMe
-        '
-        Me.DisposeMe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.DisposeMe.Location = New System.Drawing.Point(9, 66)
-        Me.DisposeMe.MaxLength = 0
-        Me.DisposeMe.Name = "DisposeMe"
-        Me.DisposeMe.ReadOnly = True
-        Me.DisposeMe.Size = New System.Drawing.Size(19, 20)
-        Me.DisposeMe.TabIndex = 0
-        Me.DisposeMe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'ClickerMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(344, 507)
+        Me.ClientSize = New System.Drawing.Size(344, 511)
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
