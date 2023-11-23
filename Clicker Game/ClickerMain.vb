@@ -30,6 +30,7 @@ Public Class ClickerMain
     Private Sub MainButton_Click(sender As Object, e As EventArgs) Handles MainButton.Click
         MainButton.Image = My.Resources.Cat_Click_Main_2
     End Sub
+
     Private Sub MainButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainButton.MouseDown
         MainButton.Image = My.Resources.Cat_Click_Main
 

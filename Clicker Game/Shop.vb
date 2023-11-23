@@ -7,10 +7,10 @@ Public Class Shop
         For i As Integer = 0 To Max.Length - 1
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
             If Max(i) = True OrElse Level(i) >= ULong.MaxValue Then
-                UPButt.Text = String.Format("Upgrade_{0} - {1} Level: Max", i + 1, Costs(i))
+                'UPButt.Text = String.Format("Upgrade_{0} - {1} Level: Max", i + 1, Costs(i))
                 UPButt.Enabled = False
             Else
-                UPButt.Text = String.Format("Upgrade_{0} - {1} Level: {2:N0}", i + 1, Costs(i), Level(i))
+                'UPButt.Text = String.Format("Upgrade_{0} - {1} Level: {2:N0}", i + 1, Costs(i), Level(i))
                 If i <> 0 AndAlso i Mod 2 = 0 Then
                     If Level(i - 1) = 0 OrElse Level(i) = 10 Then
                         UPButt.Enabled = False
@@ -21,10 +21,6 @@ Public Class Shop
     End Sub
     Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
-    End Sub
-    Private Sub HomeToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        ClickerMain.Show()
-        Me.Close()
     End Sub
     Private Sub UpgradeClick(UPButt As Button, Upgrade_Name As String, Index As Integer, Click_Value As ULong)
         If Max(Index) = True OrElse Level(Index) >= ULong.MaxValue Then
@@ -37,7 +33,7 @@ Public Class Shop
         If Money - Costs(Index) >= 0 Then
             Money -= Costs(Index)
             Level(Index) += 1UL
-            UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
+            'UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
             GData.Clicker(Click_Value)
             GData.Display()
         End If
@@ -46,7 +42,7 @@ Public Class Shop
         If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
             Money -= Costs(Index)
             Level(Index) += 1UL
-            UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
+            'UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
             UPButtSpeed.Enabled = True
             AutoClick_Timer.Enabled = True
             GData.Display()
@@ -57,7 +53,7 @@ Public Class Shop
             Money -= Costs(Index)
             Level(Index) += 1UL
             AutoClickValue(IndexVal) += AutoClick_Val
-            UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
+            'UPButt.Text = String.Format("{0} - {1} Level: {2:N0}", Upgrade_Name, Costs(Index), Level(Index))
             GData.Display()
         End If
     End Sub
@@ -65,14 +61,14 @@ Public Class Shop
         If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
             Money -= Costs(Index)
             Level(Index) += 1UL
-            UPButt.Text = String.Format("{0} - {1} Level: {2:N0} / 10", Upgrade_Name, Costs(Index), Level(Index))
+            'UPButt.Text = String.Format("{0} - {1} Level: {2:N0} / 10", Upgrade_Name, Costs(Index), Level(Index))
             GData.Display()
             Return
         ElseIf Money - Costs(Index) >= 0 Then
             Money -= Costs(Index)
             Level(Index) += 1UL
             AutoClick_Timer.Interval -= AutoClick_Speed
-            UPButt.Text = String.Format("{0} - {1} Level: {2:N0} / 10", Upgrade_Name, Costs(Index), Level(Index))
+            'UPButt.Text = String.Format("{0} - {1} Level: {2:N0} / 10", Upgrade_Name, Costs(Index), Level(Index))
 
             If Level(Index) = 10 Then
                 UPButt.Enabled = False
@@ -85,11 +81,11 @@ Public Class Shop
     Private Sub UP1_Click(sender As Object, e As EventArgs) Handles UP1.Click
         UpgradeClick(UP1, "Upgrade_1", 0, 1UL)
     End Sub
-    Private Sub UP2_Click(sender As Object, e As EventArgs) Handles UP2.Click
-        AutoClickUpgrade_Value(ClickerMain.AutoClick_1, UP2, UP3, "Upgrade_2", 1, 0, 2UL)
+    Private Sub UP2_Click(sender As Object, e As EventArgs)
+        'AutoClickUpgrade_Value(ClickerMain.AutoClick_1, UP2, UP3, "Upgrade_2", 1, 0, 2UL)
     End Sub
-    Private Sub UP3_Click(sender As Object, e As EventArgs) Handles UP3.Click
-        AutoClickUpgrade_Speed(ClickerMain.AutoClick_1, UP3, "Upgrade_3", 2, 100)
+    Private Sub UP3_Click(sender As Object, e As EventArgs)
+        'AutoClickUpgrade_Speed(ClickerMain.AutoClick_1, UP3, "Upgrade_3", 2, 100)
     End Sub
 
     Private Sub DisplayLoop_Tick(sender As Object, e As EventArgs) Handles DisplayLoop.Tick

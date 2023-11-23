@@ -179,5 +179,17 @@
   <ItemGroup>
     <None Include="Resources\BACK.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_Paw_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_Paw_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_AutoPaw_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_AutoSpeed_1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

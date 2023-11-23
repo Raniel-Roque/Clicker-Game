@@ -169,4 +169,16 @@
   <data name="_NEXT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NEXT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cat_Paw_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Paw_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cat_AutoPaw_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_AutoPaw_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cat_AutoSpeed_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_AutoSpeed_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cat_Paw_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Paw_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
