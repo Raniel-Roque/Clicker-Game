@@ -19,7 +19,7 @@ Public Class ClickerMain
             For i As Integer = 0 To Max.Length - 1
                 Dim UPButt As Button = CType(ShopMain.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
                 If UPButt IsNot Nothing Then
-                    UPButt.Text = String.Format("Upgrade_{0} - {1} Level: Max", i + 1, Costs(i))
+                    UPButt.Text = String.Format("Level Max")
                     UPButt.Enabled = False
                 End If
             Next
@@ -55,8 +55,8 @@ Public Class ClickerMain
         If ShopMain Is Nothing OrElse ShopMain.IsDisposed Then
             ShopMain = New Shop
         End If
-        ShopMain.Show()
         ShopMain.BringToFront()
+        ShopMain.Show()
         Me.Hide()
     End Sub
 

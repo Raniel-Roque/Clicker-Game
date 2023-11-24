@@ -87,7 +87,7 @@ Partial Class ClickerMain
         Me.TopMoneyLabel.ReadOnly = True
         Me.TopMoneyLabel.Size = New System.Drawing.Size(202, 20)
         Me.TopMoneyLabel.TabIndex = 17
-        Me.TopMoneyLabel.Text = "18,446,744,073,709,551,615"
+        Me.TopMoneyLabel.Text = "0"
         Me.TopMoneyLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel2
@@ -140,7 +140,7 @@ Partial Class ClickerMain
         Me.BotMoneyLabel.ReadOnly = True
         Me.BotMoneyLabel.Size = New System.Drawing.Size(277, 23)
         Me.BotMoneyLabel.TabIndex = 15
-        Me.BotMoneyLabel.Text = "18,446,744,073,709,551,615"
+        Me.BotMoneyLabel.Text = "0"
         Me.BotMoneyLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'DisposeMe

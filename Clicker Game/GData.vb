@@ -2,13 +2,13 @@
     'Save State
 
     'Main Money
-    Public Money As ULong = 1UL
+    Public Money As ULong = 0UL
     Public Click As ULong = 1UL
 
     'Upgrades
-    Public Costs() = {10, 100, 250}
-    Public Max() = {False, False, False}
-    Public Level() = {0, 0, 0}
+    Public Costs() = {10, 100, 500, 750}
+    Public Max() = {False, False, False, False}
+    Public Level() = {0, 0, 0, 0}
     Public AutoClickValue() = {2UL}
 
     'Global Functions
@@ -28,7 +28,7 @@
             ClickerMain.TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
             ClickerMain.BotMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
         Else
-            ClickerMain.TopMoneyLabel.Text = "Maxed Cash! Ascend Now!"
+            ClickerMain.TopMoneyLabel.Text = "Ascend Now!"
             ClickerMain.BotMoneyLabel.Text = "Maxed Cash! Ascend Now!"
             GData.Money = ULong.MaxValue
             GData.Click = ULong.MaxValue
