@@ -2,6 +2,13 @@
 
 Public Class ClickerMain
     Public timers As New List(Of Timer)
+    Private Sub ClickerMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DisposeMe.Focus()
+        DisposeMe.Dispose()
+        GData.Display()
+        timers.Add(AutoClick_1)
+        timers.Add(AutoClick_2)
+    End Sub
     Public Sub AutoClick(ByVal ACValueIndex As Integer)
         Try
             GData.Money += GData.AutoClickValue(ACValueIndex)
@@ -51,10 +58,24 @@ Public Class ClickerMain
         GData.Display()
     End Sub
     Dim ShopMain As Shop
+    Dim ShopMain2 As Shop2
     Private Sub Shop_Click(sender As Object, e As EventArgs) Handles Shop.Click
+        If ShopMain IsNot Nothing Then
+            ShopMain.Dispose()
+        End If
+
+        If ShopMain2 IsNot Nothing Then
+            ShopMain2.Dispose()
+        End If
+
         If ShopMain Is Nothing OrElse ShopMain.IsDisposed Then
             ShopMain = New Shop
         End If
+
+        If ShopMain Is Nothing OrElse ShopMain.IsDisposed Then
+            ShopMain2 = New Shop2
+        End If
+
         ShopMain.BringToFront()
         ShopMain.Show()
         Me.Hide()
@@ -63,13 +84,9 @@ Public Class ClickerMain
     Private Sub AutoClick_1_Tick(sender As Object, e As EventArgs) Handles AutoClick_1.Tick
         AutoClick(0)
     End Sub
-
-    Private Sub ClickerMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DisposeMe.Dispose()
-        GData.Display()
-        timers.Add(AutoClick_1)
+    Private Sub AutoClick_2_Tick(sender As Object, e As EventArgs) Handles AutoClick_2.Tick
+        AutoClick(1)
     End Sub
-
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
         MessageBox.Show("Home")
     End Sub
@@ -88,9 +105,5 @@ Public Class ClickerMain
     End Sub
     Private Sub Settings_NotEnter(sender As Object, e As EventArgs) Handles Settings.MouseLeave
         Settings.BackColor = Color.FromArgb(252, 228, 228)
-    End Sub
-
-    Private Sub MainButton_Enter(sender As Object, e As EventArgs)
-
     End Sub
 End Class

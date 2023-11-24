@@ -101,6 +101,12 @@
     <Compile Include="Shop.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Shop2.Designer.vb">
+      <DependentUpon>Shop2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shop2.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ClickerMain.resx">
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop2.resx">
+      <DependentUpon>Shop2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -3,13 +3,24 @@
 
     'Main Money
     Public Money As ULong = 0UL
-    Public Click As ULong = 1UL
+    Public Click As ULong = 15000UL
+    Public Asc As ULong = 0UL
 
     'Upgrades
-    Public Costs() = {10, 100, 500, 750}
-    Public Max() = {False, False, False, False}
-    Public Level() = {0, 0, 0, 0}
-    Public AutoClickValue() = {2UL}
+    Public Costs() = {
+        10, 100, 500, 1000,
+        3000, 5000, 1000, 50000
+    }
+    Public Max() = {
+        False, False, False, False,
+        False, False, False, False
+    }
+    Public Level() = {
+        0, 0, 0, 0,
+        0, 0, 0, 0
+    }
+
+    Public AutoClickValue() = {5UL, 500UL, 1000UL}
 
     'Global Functions
     Public Sub Clicker(ByVal Click_Count As Integer)
@@ -33,6 +44,86 @@
             GData.Money = ULong.MaxValue
             GData.Click = ULong.MaxValue
             GData.Max(0) = True
+        End If
+    End Sub
+
+    'Global Shop Functions
+    Public Sub UpgradeClick(
+                        UPButt As Button,
+                        UPLabel As Label,
+                        Index As Integer,
+                        Click_Value As ULong
+                        )
+
+        If Max(Index) = True OrElse Level(Index) >= ULong.MaxValue Then
+            UPLabel.Text = String.Format("Level Max")
+            UPButt.Enabled = False
+            GData.Max(Index) = True
+            Return
+        End If
+
+        If Money - Costs(Index) >= 0 Then
+            Money -= Costs(Index)
+            Level(Index) += 1UL
+            UPLabel.Text = String.Format("Level {0:N0}", Level(Index))
+            GData.Clicker(Click_Value)
+            GData.Display()
+        End If
+    End Sub
+    Public Sub AutoClickUpgrade_Value(
+                                      AutoClick_Timer As Timer,
+                                      UPButt As Button,
+                                      UPButtSpeed As Button,
+                                      UPLabel As Label,
+                                      Index As Integer,
+                                      IndexVal As Integer,
+                                      AutoClick_Val As Integer
+                                      )
+
+        If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
+            Money -= Costs(Index)
+            Level(Index) += 1UL
+            UPLabel.Text = String.Format("Level {0:N0}", Level(Index))
+            UPButtSpeed.Enabled = True
+            AutoClick_Timer.Enabled = True
+            GData.Display()
+            Return
+        End If
+
+        If Money - Costs(Index) >= 0 Then
+            Money -= Costs(Index)
+            Level(Index) += 1UL
+            AutoClickValue(IndexVal) += AutoClick_Val
+            UPLabel.Text = String.Format("Level {0:N0}", Level(Index))
+            GData.Display()
+        End If
+    End Sub
+    Public Sub AutoClickUpgrade_Speed(
+                                      AutoClick_Timer As Timer,
+                                      UPButt As Button,
+                                      UPLabel As Label,
+                                      Index As Integer,
+                                      AutoClick_Speed As Integer
+                                      )
+
+        If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
+            Money -= Costs(Index)
+            Level(Index) += 1UL
+            UPLabel.Text = String.Format("Level {0:N0} / 10", Level(Index))
+            GData.Display()
+            Return
+        ElseIf Money - Costs(Index) >= 0 Then
+            Money -= Costs(Index)
+            Level(Index) += 1UL
+            AutoClick_Timer.Interval -= AutoClick_Speed
+            UPLabel.Text = String.Format("Level {0:N0} / 10", Level(Index))
+
+            If Level(Index) = 10 Then
+                UPButt.Enabled = False
+            End If
+
+            GData.Display()
+            Return
         End If
     End Sub
 End Module

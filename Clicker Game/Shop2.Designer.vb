@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Shop
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Shop2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Shop
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -31,13 +31,14 @@ Partial Class Shop
         Me.MoneyBorder = New System.Windows.Forms.PictureBox()
         Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.DisplayLoop = New System.Windows.Forms.Timer(Me.components)
-        Me.UP3 = New System.Windows.Forms.Button()
-        Me.UP2 = New System.Windows.Forms.Button()
-        Me.UP1 = New System.Windows.Forms.Button()
+        Me.UP6 = New System.Windows.Forms.Button()
+        Me.UP5 = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.PictureBox()
+        Me.BG_Back = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Next_ = New System.Windows.Forms.PictureBox()
+        Me.BG_Next = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
@@ -45,34 +46,37 @@ Partial Class Shop
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.UP4 = New System.Windows.Forms.Button()
+        Me.UP7 = New System.Windows.Forms.Button()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.LevelLabel2 = New System.Windows.Forms.Label()
-        Me.LevelLabel1 = New System.Windows.Forms.Label()
+        Me.LevelLabel5 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.LevelLabel3 = New System.Windows.Forms.Label()
+        Me.LevelLabel6 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.LevelLabel4 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.LevelLabel8 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.CostLabel = New System.Windows.Forms.Label()
         Me.DisposeUnlock1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.UP8 = New System.Windows.Forms.Button()
+        Me.LevelLabel7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Back, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BG_Back, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Next_, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BG_Next, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -168,47 +172,54 @@ Partial Class Shop
         '
         Me.DisplayLoop.Enabled = True
         '
-        'UP3
+        'UP6
         '
-        Me.UP3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP3.FlatAppearance.BorderSize = 0
-        Me.UP3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP3.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoSpeed_1
-        Me.UP3.Location = New System.Drawing.Point(22, 294)
-        Me.UP3.Name = "UP3"
-        Me.UP3.Size = New System.Drawing.Size(64, 66)
-        Me.UP3.TabIndex = 34
-        Me.UP3.UseVisualStyleBackColor = False
+        Me.UP6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP6.FlatAppearance.BorderSize = 0
+        Me.UP6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP6.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoSpeed_1
+        Me.UP6.Location = New System.Drawing.Point(22, 210)
+        Me.UP6.Name = "UP6"
+        Me.UP6.Size = New System.Drawing.Size(64, 66)
+        Me.UP6.TabIndex = 34
+        Me.UP6.UseVisualStyleBackColor = False
         '
-        'UP2
+        'UP5
         '
-        Me.UP2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP2.FlatAppearance.BorderSize = 0
-        Me.UP2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP2.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoPaw_1
-        Me.UP2.Location = New System.Drawing.Point(22, 208)
-        Me.UP2.Name = "UP2"
-        Me.UP2.Size = New System.Drawing.Size(64, 66)
-        Me.UP2.TabIndex = 33
-        Me.UP2.UseVisualStyleBackColor = False
+        Me.UP5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP5.FlatAppearance.BorderSize = 0
+        Me.UP5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP5.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoPaw_1
+        Me.UP5.Location = New System.Drawing.Point(22, 123)
+        Me.UP5.Name = "UP5"
+        Me.UP5.Size = New System.Drawing.Size(64, 66)
+        Me.UP5.TabIndex = 33
+        Me.UP5.UseVisualStyleBackColor = False
         '
-        'UP1
+        'Back
         '
-        Me.UP1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP1.FlatAppearance.BorderSize = 0
-        Me.UP1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP1.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_1
-        Me.UP1.Location = New System.Drawing.Point(22, 122)
-        Me.UP1.Name = "UP1"
-        Me.UP1.Size = New System.Drawing.Size(64, 66)
-        Me.UP1.TabIndex = 32
-        Me.UP1.UseVisualStyleBackColor = False
+        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Back.Image = Global.Clicker_Game.My.Resources.Resources.BACK
+        Me.Back.Location = New System.Drawing.Point(23, 471)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(81, 28)
+        Me.Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Back.TabIndex = 24
+        Me.Back.TabStop = False
+        '
+        'BG_Back
+        '
+        Me.BG_Back.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Back_Next
+        Me.BG_Back.Location = New System.Drawing.Point(12, 463)
+        Me.BG_Back.Name = "BG_Back"
+        Me.BG_Back.Size = New System.Drawing.Size(105, 45)
+        Me.BG_Back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BG_Back.TabIndex = 21
+        Me.BG_Back.TabStop = False
         '
         'PictureBox11
         '
@@ -230,26 +241,26 @@ Partial Class Shop
         Me.PictureBox9.TabIndex = 25
         Me.PictureBox9.TabStop = False
         '
-        'PictureBox6
+        'Next_
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.PictureBox6.Image = Global.Clicker_Game.My.Resources.Resources._NEXT
-        Me.PictureBox6.Location = New System.Drawing.Point(242, 471)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(75, 31)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 23
-        Me.PictureBox6.TabStop = False
+        Me.Next_.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Next_.Image = Global.Clicker_Game.My.Resources.Resources._NEXT
+        Me.Next_.Location = New System.Drawing.Point(242, 471)
+        Me.Next_.Name = "Next_"
+        Me.Next_.Size = New System.Drawing.Size(75, 31)
+        Me.Next_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Next_.TabIndex = 23
+        Me.Next_.TabStop = False
         '
-        'PictureBox5
+        'BG_Next
         '
-        Me.PictureBox5.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Back_Next
-        Me.PictureBox5.Location = New System.Drawing.Point(225, 463)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(107, 45)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 22
-        Me.PictureBox5.TabStop = False
+        Me.BG_Next.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Back_Next
+        Me.BG_Next.Location = New System.Drawing.Point(225, 463)
+        Me.BG_Next.Name = "BG_Next"
+        Me.BG_Next.Size = New System.Drawing.Size(107, 45)
+        Me.BG_Next.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BG_Next.TabIndex = 22
+        Me.BG_Next.TabStop = False
         '
         'PictureBox3
         '
@@ -321,19 +332,19 @@ Partial Class Shop
         Me.PictureBox14.TabIndex = 42
         Me.PictureBox14.TabStop = False
         '
-        'UP4
+        'UP7
         '
-        Me.UP4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP4.FlatAppearance.BorderSize = 0
-        Me.UP4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP4.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_2
-        Me.UP4.Location = New System.Drawing.Point(22, 377)
-        Me.UP4.Name = "UP4"
-        Me.UP4.Size = New System.Drawing.Size(64, 66)
-        Me.UP4.TabIndex = 41
-        Me.UP4.UseVisualStyleBackColor = False
+        Me.UP7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP7.FlatAppearance.BorderSize = 0
+        Me.UP7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP7.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_2
+        Me.UP7.Location = New System.Drawing.Point(22, 293)
+        Me.UP7.Name = "UP7"
+        Me.UP7.Size = New System.Drawing.Size(64, 66)
+        Me.UP7.TabIndex = 41
+        Me.UP7.UseVisualStyleBackColor = False
         '
         'PictureBox10
         '
@@ -352,198 +363,9 @@ Partial Class Shop
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(114, 124)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 20)
+        Me.Label1.Size = New System.Drawing.Size(32, 20)
         Me.Label1.TabIndex = 43
-        Me.Label1.Text = "Kitty Paw"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label3.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(114, 210)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 20)
-        Me.Label3.TabIndex = 45
-        Me.Label3.Text = "Garfield"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(114, 296)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 20)
-        Me.Label4.TabIndex = 46
-        Me.Label4.Text = "Lasagna"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.Location = New System.Drawing.Point(115, 247)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(151, 17)
-        Me.Label5.TabIndex = 47
-        Me.Label5.Text = "Garfield Autoclicker. (+5)"
-        '
-        'LevelLabel2
-        '
-        Me.LevelLabel2.AutoSize = True
-        Me.LevelLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.LevelLabel2.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LevelLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.LevelLabel2.Location = New System.Drawing.Point(115, 230)
-        Me.LevelLabel2.Name = "LevelLabel2"
-        Me.LevelLabel2.Size = New System.Drawing.Size(51, 17)
-        Me.LevelLabel2.TabIndex = 48
-        Me.LevelLabel2.Text = "Level 0"
-        '
-        'LevelLabel1
-        '
-        Me.LevelLabel1.AutoSize = True
-        Me.LevelLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.LevelLabel1.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LevelLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.LevelLabel1.Location = New System.Drawing.Point(115, 144)
-        Me.LevelLabel1.Name = "LevelLabel1"
-        Me.LevelLabel1.Size = New System.Drawing.Size(51, 17)
-        Me.LevelLabel1.TabIndex = 50
-        Me.LevelLabel1.Text = "Level 0"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label8.Location = New System.Drawing.Point(115, 161)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(94, 17)
-        Me.Label8.TabIndex = 49
-        Me.Label8.Text = "+1 Click Power"
-        '
-        'LevelLabel3
-        '
-        Me.LevelLabel3.AutoSize = True
-        Me.LevelLabel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.LevelLabel3.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LevelLabel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.LevelLabel3.Location = New System.Drawing.Point(115, 316)
-        Me.LevelLabel3.Name = "LevelLabel3"
-        Me.LevelLabel3.Size = New System.Drawing.Size(79, 17)
-        Me.LevelLabel3.TabIndex = 52
-        Me.LevelLabel3.Text = "Level 0 / 10"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label10.Location = New System.Drawing.Point(115, 333)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(206, 17)
-        Me.Label10.TabIndex = 51
-        Me.Label10.Text = "Garf's Fave Dish. (Faster Autoclick)"
-        '
-        'LevelLabel4
-        '
-        Me.LevelLabel4.AutoSize = True
-        Me.LevelLabel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.LevelLabel4.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LevelLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.LevelLabel4.Location = New System.Drawing.Point(115, 400)
-        Me.LevelLabel4.Name = "LevelLabel4"
-        Me.LevelLabel4.Size = New System.Drawing.Size(51, 17)
-        Me.LevelLabel4.TabIndex = 55
-        Me.LevelLabel4.Text = "Level 0"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label12.Location = New System.Drawing.Point(115, 417)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(108, 17)
-        Me.Label12.TabIndex = 54
-        Me.Label12.Text = "+150 Click Power"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label13.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(114, 380)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(93, 20)
-        Me.Label13.TabIndex = 53
-        Me.Label13.Text = "Fur Padding"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label14.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label14.Location = New System.Drawing.Point(288, 124)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(29, 17)
-        Me.Label14.TabIndex = 56
-        Me.Label14.Text = "$10"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label15.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label15.Location = New System.Drawing.Point(281, 210)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(36, 17)
-        Me.Label15.TabIndex = 57
-        Me.Label15.Text = "$100"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label16.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label16.Location = New System.Drawing.Point(281, 296)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(36, 17)
-        Me.Label16.TabIndex = 58
-        Me.Label16.Text = "$500"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label17.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label17.Location = New System.Drawing.Point(273, 380)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(43, 17)
-        Me.Label17.TabIndex = 59
-        Me.Label17.Text = "$1000"
-        '
-        'DisposeUnlock1
-        '
-        Me.DisposeUnlock1.AutoSize = True
-        Me.DisposeUnlock1.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.DisposeUnlock1.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisposeUnlock1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.DisposeUnlock1.Location = New System.Drawing.Point(178, 299)
-        Me.DisposeUnlock1.Name = "DisposeUnlock1"
-        Me.DisposeUnlock1.Size = New System.Drawing.Size(92, 15)
-        Me.DisposeUnlock1.TabIndex = 60
-        Me.DisposeUnlock1.Text = "(Needs Garfield)"
+        Me.Label1.Text = "Cat"
         '
         'Label2
         '
@@ -553,52 +375,257 @@ Partial Class Shop
         Me.Label2.Location = New System.Drawing.Point(138, 466)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 33)
-        Me.Label2.TabIndex = 61
-        Me.Label2.Text = "1 / 3"
+        Me.Label2.TabIndex = 44
+        Me.Label2.Text = "2 / 3"
         '
-        'Shop
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label3.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(114, 210)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 20)
+        Me.Label3.TabIndex = 45
+        Me.Label3.Text = "Food"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label4.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(114, 296)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(78, 20)
+        Me.Label4.TabIndex = 46
+        Me.Label4.Text = "White Fur"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label5.Location = New System.Drawing.Point(115, 161)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(138, 17)
+        Me.Label5.TabIndex = 47
+        Me.Label5.Text = "Cat Autoclicker. (+500)"
+        '
+        'LevelLabel5
+        '
+        Me.LevelLabel5.AutoSize = True
+        Me.LevelLabel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.LevelLabel5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LevelLabel5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.LevelLabel5.Location = New System.Drawing.Point(115, 144)
+        Me.LevelLabel5.Name = "LevelLabel5"
+        Me.LevelLabel5.Size = New System.Drawing.Size(51, 17)
+        Me.LevelLabel5.TabIndex = 50
+        Me.LevelLabel5.Text = "Level 0"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label8.Location = New System.Drawing.Point(115, 333)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(115, 17)
+        Me.Label8.TabIndex = 49
+        Me.Label8.Text = "+1500 Click Power"
+        '
+        'LevelLabel6
+        '
+        Me.LevelLabel6.AutoSize = True
+        Me.LevelLabel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.LevelLabel6.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LevelLabel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.LevelLabel6.Location = New System.Drawing.Point(115, 230)
+        Me.LevelLabel6.Name = "LevelLabel6"
+        Me.LevelLabel6.Size = New System.Drawing.Size(79, 17)
+        Me.LevelLabel6.TabIndex = 52
+        Me.LevelLabel6.Text = "Level 0 / 10"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label10.Location = New System.Drawing.Point(115, 247)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(206, 17)
+        Me.Label10.TabIndex = 51
+        Me.Label10.Text = "Garf's Fave Dish. (Faster Autoclick)"
+        '
+        'LevelLabel8
+        '
+        Me.LevelLabel8.AutoSize = True
+        Me.LevelLabel8.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.LevelLabel8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LevelLabel8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.LevelLabel8.Location = New System.Drawing.Point(115, 400)
+        Me.LevelLabel8.Name = "LevelLabel8"
+        Me.LevelLabel8.Size = New System.Drawing.Size(51, 17)
+        Me.LevelLabel8.TabIndex = 55
+        Me.LevelLabel8.Text = "Level 0"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label13.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(114, 380)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(60, 20)
+        Me.Label13.TabIndex = 53
+        Me.Label13.Text = "Ascend"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label14.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label14.Location = New System.Drawing.Point(278, 123)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(43, 17)
+        Me.Label14.TabIndex = 56
+        Me.Label14.Text = "$3000"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label15.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label15.Location = New System.Drawing.Point(278, 210)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(43, 17)
+        Me.Label15.TabIndex = 57
+        Me.Label15.Text = "$5000"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label16.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label16.Location = New System.Drawing.Point(284, 296)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(37, 17)
+        Me.Label16.TabIndex = 58
+        Me.Label16.Text = "$10K"
+        '
+        'CostLabel
+        '
+        Me.CostLabel.AutoSize = True
+        Me.CostLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.CostLabel.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CostLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CostLabel.Location = New System.Drawing.Point(284, 380)
+        Me.CostLabel.Name = "CostLabel"
+        Me.CostLabel.Size = New System.Drawing.Size(37, 17)
+        Me.CostLabel.TabIndex = 59
+        Me.CostLabel.Text = "$50K"
+        '
+        'DisposeUnlock1
+        '
+        Me.DisposeUnlock1.AutoSize = True
+        Me.DisposeUnlock1.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.DisposeUnlock1.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisposeUnlock1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.DisposeUnlock1.Location = New System.Drawing.Point(185, 212)
+        Me.DisposeUnlock1.Name = "DisposeUnlock1"
+        Me.DisposeUnlock1.Size = New System.Drawing.Size(69, 15)
+        Me.DisposeUnlock1.TabIndex = 60
+        Me.DisposeUnlock1.Text = "(Needs Cat)"
+        '
+        'UP8
+        '
+        Me.UP8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP8.FlatAppearance.BorderSize = 0
+        Me.UP8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP8.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoPaw_1
+        Me.UP8.Location = New System.Drawing.Point(22, 379)
+        Me.UP8.Name = "UP8"
+        Me.UP8.Size = New System.Drawing.Size(64, 66)
+        Me.UP8.TabIndex = 61
+        Me.UP8.UseVisualStyleBackColor = False
+        '
+        'LevelLabel7
+        '
+        Me.LevelLabel7.AutoSize = True
+        Me.LevelLabel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.LevelLabel7.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LevelLabel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.LevelLabel7.Location = New System.Drawing.Point(115, 316)
+        Me.LevelLabel7.Name = "LevelLabel7"
+        Me.LevelLabel7.Size = New System.Drawing.Size(51, 17)
+        Me.LevelLabel7.TabIndex = 48
+        Me.LevelLabel7.Text = "Level 0"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label6.Location = New System.Drawing.Point(115, 418)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(194, 13)
+        Me.Label6.TabIndex = 62
+        Me.Label6.Text = "Resets Progress (Except Ascenscions)"
+        '
+        'Shop2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(344, 511)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.UP8)
         Me.Controls.Add(Me.DisposeUnlock1)
-        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.CostLabel)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.LevelLabel4)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.LevelLabel8)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.LevelLabel3)
+        Me.Controls.Add(Me.LevelLabel6)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.LevelLabel1)
+        Me.Controls.Add(Me.LevelLabel5)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.LevelLabel2)
+        Me.Controls.Add(Me.LevelLabel7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox14)
-        Me.Controls.Add(Me.UP4)
+        Me.Controls.Add(Me.UP7)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox15)
         Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.UP3)
-        Me.Controls.Add(Me.UP2)
-        Me.Controls.Add(Me.UP1)
+        Me.Controls.Add(Me.UP6)
+        Me.Controls.Add(Me.UP5)
+        Me.Controls.Add(Me.Back)
+        Me.Controls.Add(Me.BG_Back)
         Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.Next_)
+        Me.Controls.Add(Me.BG_Next)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
-        Me.Name = "Shop"
+        Me.Name = "Shop2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Shop"
         Me.Panel1.ResumeLayout(False)
@@ -606,10 +633,12 @@ Partial Class Shop
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Back, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BG_Back, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Next_, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BG_Next, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -632,36 +661,38 @@ Partial Class Shop
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents BG_Back As PictureBox
+    Friend WithEvents BG_Next As PictureBox
+    Friend WithEvents Next_ As PictureBox
+    Friend WithEvents Back As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents UP1 As Button
-    Friend WithEvents UP2 As Button
-    Friend WithEvents UP3 As Button
+    Friend WithEvents UP5 As Button
+    Friend WithEvents UP6 As Button
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents UP4 As Button
+    Friend WithEvents UP7 As Button
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents LevelLabel2 As Label
-    Friend WithEvents LevelLabel1 As Label
+    Friend WithEvents LevelLabel5 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents LevelLabel3 As Label
+    Friend WithEvents LevelLabel6 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents LevelLabel4 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents LevelLabel8 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
+    Friend WithEvents CostLabel As Label
     Friend WithEvents DisposeUnlock1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents UP8 As Button
+    Friend WithEvents LevelLabel7 As Label
+    Friend WithEvents Label6 As Label
 End Class

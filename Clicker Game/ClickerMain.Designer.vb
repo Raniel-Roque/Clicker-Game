@@ -45,6 +45,7 @@ Partial Class ClickerMain
         Me.MainButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.AutoClick_2 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Home, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -300,6 +301,10 @@ Partial Class ClickerMain
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
+        'AutoClick_2
+        '
+        Me.AutoClick_2.Interval = 5000
+        '
         'ClickerMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -360,4 +365,5 @@ Partial Class ClickerMain
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents DisposeMe As TextBox
+    Public WithEvents AutoClick_2 As Timer
 End Class
