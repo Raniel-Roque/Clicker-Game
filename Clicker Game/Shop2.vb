@@ -29,11 +29,15 @@ Public Class Shop2
     Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
         ClickerMain.BringToFront()
+        ShopCosmetic.Dispose()
+        Shop3.Dispose()
         Shop.Dispose()
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         ClickerMain.Show()
         ClickerMain.BringToFront()
+        ShopCosmetic.Dispose()
+        Shop3.Dispose()
         Shop.Dispose()
         Me.Dispose()
     End Sub
@@ -52,6 +56,7 @@ Public Class Shop2
     End Sub
     Private Sub UP8_Click(sender As Object, e As EventArgs) Handles UP8.Click
         If Money - Costs(7) >= 0 Then
+            Asc += 1UL
             Money = 0
             Level(7) += 1UL
             LevelLabel8.Text = String.Format("Level {0:N0}", Level(7))
@@ -61,8 +66,14 @@ Public Class Shop2
                 GData.Level(i) = 0
                 GData.Max(i) = False
             Next
+
             ClickerMain.AutoClick_1.Enabled = False
             ClickerMain.AutoClick_2.Enabled = False
+            ClickerMain.AutoClick_1.Interval = 2000
+            ClickerMain.AutoClick_2.Interval = 5000
+
+            GData.AutoClickValue(0) = 5UL
+            GData.AutoClickValue(1) = 500UL
 
             TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
             GData.Display()
@@ -85,12 +96,20 @@ Public Class Shop2
     End Sub
 
     Private Sub Next_Click(sender As Object, e As EventArgs) Handles Next_.Click, BG_Next.Click
-
+        Shop3.Show()
+        Shop3.BringToFront()
+        Me.Hide()
     End Sub
 
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles BG_Back.Click, Back.Click
         Shop.Show()
         Shop.BringToFront()
+        Me.Hide()
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        ShopCosmetic.Show()
+        ShopCosmetic.BringToFront()
         Me.Hide()
     End Sub
 End Class

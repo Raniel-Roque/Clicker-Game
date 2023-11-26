@@ -24,6 +24,7 @@ Partial Class Shop2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TopMoneyLabel = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -68,6 +69,7 @@ Partial Class Shop2
         Me.LevelLabel7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -90,6 +92,7 @@ Partial Class Shop2
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.TopMoneyLabel)
         Me.Panel1.Controls.Add(Me.Panel2)
@@ -100,6 +103,16 @@ Partial Class Shop2
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(344, 60)
         Me.Panel1.TabIndex = 12
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Clicker_Game.My.Resources.Resources.money_bag
+        Me.PictureBox4.Location = New System.Drawing.Point(10, 10)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(47, 47)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 19
+        Me.PictureBox4.TabStop = False
         '
         'PictureBox1
         '
@@ -180,7 +193,7 @@ Partial Class Shop2
         Me.UP6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
         Me.UP6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.UP6.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoSpeed_1
-        Me.UP6.Location = New System.Drawing.Point(22, 210)
+        Me.UP6.Location = New System.Drawing.Point(22, 208)
         Me.UP6.Name = "UP6"
         Me.UP6.Size = New System.Drawing.Size(64, 66)
         Me.UP6.TabIndex = 34
@@ -363,9 +376,9 @@ Partial Class Shop2
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(114, 124)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(32, 20)
+        Me.Label1.Size = New System.Drawing.Size(83, 20)
         Me.Label1.TabIndex = 43
-        Me.Label1.Text = "Cat"
+        Me.Label1.Text = "Hello Kitty"
         '
         'Label2
         '
@@ -385,9 +398,9 @@ Partial Class Shop2
         Me.Label3.Font = New System.Drawing.Font("Nirmala UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(114, 210)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 20)
+        Me.Label3.Size = New System.Drawing.Size(30, 20)
         Me.Label3.TabIndex = 45
-        Me.Label3.Text = "Food"
+        Me.Label3.Text = "Pie"
         '
         'Label4
         '
@@ -408,9 +421,9 @@ Partial Class Shop2
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label5.Location = New System.Drawing.Point(115, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(138, 17)
+        Me.Label5.Size = New System.Drawing.Size(148, 17)
         Me.Label5.TabIndex = 47
-        Me.Label5.Text = "Cat Autoclicker. (+500)"
+        Me.Label5.Text = "Hi Cat's Nemesis (+500)"
         '
         'LevelLabel5
         '
@@ -456,9 +469,9 @@ Partial Class Shop2
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label10.Location = New System.Drawing.Point(115, 247)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(206, 17)
+        Me.Label10.Size = New System.Drawing.Size(177, 17)
         Me.Label10.TabIndex = 51
-        Me.Label10.Text = "Garf's Fave Dish. (Faster Autoclick)"
+        Me.Label10.Text = "Apple Pie!!! (Faster Autoclick)"
         '
         'LevelLabel8
         '
@@ -537,11 +550,11 @@ Partial Class Shop2
         Me.DisposeUnlock1.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
         Me.DisposeUnlock1.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisposeUnlock1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.DisposeUnlock1.Location = New System.Drawing.Point(185, 212)
+        Me.DisposeUnlock1.Location = New System.Drawing.Point(150, 212)
         Me.DisposeUnlock1.Name = "DisposeUnlock1"
-        Me.DisposeUnlock1.Size = New System.Drawing.Size(69, 15)
+        Me.DisposeUnlock1.Size = New System.Drawing.Size(106, 15)
         Me.DisposeUnlock1.TabIndex = 60
-        Me.DisposeUnlock1.Text = "(Needs Cat)"
+        Me.DisposeUnlock1.Text = "(Needs Hello Kitty)"
         '
         'UP8
         '
@@ -630,6 +643,7 @@ Partial Class Shop2
         Me.Text = "Shop"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).EndInit()
@@ -695,4 +709,5 @@ Partial Class Shop2
     Friend WithEvents UP8 As Button
     Friend WithEvents LevelLabel7 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

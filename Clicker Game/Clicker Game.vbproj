@@ -107,6 +107,18 @@
     <Compile Include="Shop2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Shop3.Designer.vb">
+      <DependentUpon>Shop3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shop3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopCosmetic.Designer.vb">
+      <DependentUpon>ShopCosmetic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShopCosmetic.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ClickerMain.resx">
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shop2.resx">
       <DependentUpon>Shop2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shop3.resx">
+      <DependentUpon>Shop3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopCosmetic.resx">
+      <DependentUpon>ShopCosmetic.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -171,9 +189,6 @@
     <None Include="Resources\Shop_Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Achieve_Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\X.png" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +214,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cat_AutoSpeed_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achieve_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_Click_1_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Golden_Main_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Golden_Main_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Golden_Main_2_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_Main_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_Main_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_Paw_Main_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cookie_Main_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cookie_Main_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

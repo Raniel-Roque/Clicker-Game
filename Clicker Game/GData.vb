@@ -3,24 +3,38 @@
 
     'Main Money
     Public Money As ULong = 0UL
-    Public Click As ULong = 15000UL
-    Public Asc As ULong = 0UL
+    Public Click As ULong = 1UL
+    Public Asc As ULong = 10UL
+    Public Rebirth As ULong = 0UL
+    Public FirstClick As Boolean = False
 
     'Upgrades
     Public Costs() = {
         10, 100, 500, 1000,
-        3000, 5000, 1000, 50000
+        3000, 5000, 1000, 50000,
+        1, 1, 1, 5
     }
     Public Max() = {
+        False, False, False, False,
         False, False, False, False,
         False, False, False, False
     }
     Public Level() = {
         0, 0, 0, 0,
+        0, 0, 0, 0,
         0, 0, 0, 0
     }
 
-    Public AutoClickValue() = {5UL, 500UL, 1000UL}
+    Public AutoClickValue() = {5UL, 500UL, 5000UL}
+    'Cosmetics
+    Public CosmeticUnlocked() = {True, False, False, False}
+    Public Cosmetic = 0
+    Public CosmeticList() = {
+        My.Resources.Cat_Click_Main, My.Resources.Cat_Click_Main_2,
+        My.Resources.Golden_Main_1, My.Resources.Golden_Main_2,
+        My.Resources.Cookie_Main_1, My.Resources.Cookie_Main_2,
+        My.Resources.Black_Main_1, My.Resources.Black_Main_2
+    }
 
     'Global Functions
     Public Sub Clicker(ByVal Click_Count As Integer)

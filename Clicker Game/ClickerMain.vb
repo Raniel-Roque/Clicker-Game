@@ -8,6 +8,7 @@ Public Class ClickerMain
         GData.Display()
         timers.Add(AutoClick_1)
         timers.Add(AutoClick_2)
+        timers.Add(AutoClick_3)
     End Sub
     Public Sub AutoClick(ByVal ACValueIndex As Integer)
         Try
@@ -35,11 +36,15 @@ Public Class ClickerMain
         GData.Display()
     End Sub
     Private Sub MainButton_Click(sender As Object, e As EventArgs) Handles MainButton.Click
-        MainButton.Image = My.Resources.Cat_Click_Main_2
+        MainButton.Image = CosmeticList(Cosmetic + 1)
     End Sub
 
     Private Sub MainButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainButton.MouseDown
-        MainButton.Image = My.Resources.Cat_Click_Main
+        MainButton.Image = CosmeticList(Cosmetic)
+        If FirstClick = False Then
+            MessageBox.Show("First Click!")
+            FirstClick = True
+        End If
 
         Try
             GData.Money += GData.Click
@@ -55,10 +60,17 @@ Public Class ClickerMain
             Next
         End Try
 
+        If Money = 1000000 Then
+            MessageBox.Show("1M Money!")
+            CosmeticUnlocked(1) = True
+        End If
+
         GData.Display()
     End Sub
     Dim ShopMain As Shop
     Dim ShopMain2 As Shop2
+    Dim ShopMain3 As Shop3
+    Dim ShopMainCosmetic As ShopCosmetic
     Private Sub Shop_Click(sender As Object, e As EventArgs) Handles Shop.Click
         If ShopMain IsNot Nothing Then
             ShopMain.Dispose()
@@ -68,12 +80,28 @@ Public Class ClickerMain
             ShopMain2.Dispose()
         End If
 
+        If ShopMain3 IsNot Nothing Then
+            ShopMain3.Dispose()
+        End If
+
+        If ShopMainCosmetic IsNot Nothing Then
+            ShopMainCosmetic.Dispose()
+        End If
+
         If ShopMain Is Nothing OrElse ShopMain.IsDisposed Then
             ShopMain = New Shop
         End If
 
         If ShopMain Is Nothing OrElse ShopMain.IsDisposed Then
             ShopMain2 = New Shop2
+        End If
+
+        If ShopMain3 Is Nothing OrElse ShopMain.IsDisposed Then
+            ShopMain3 = New Shop3
+        End If
+
+        If ShopMainCosmetic Is Nothing OrElse ShopMain.IsDisposed Then
+            ShopMainCosmetic = New ShopCosmetic
         End If
 
         ShopMain.BringToFront()
@@ -86,6 +114,9 @@ Public Class ClickerMain
     End Sub
     Private Sub AutoClick_2_Tick(sender As Object, e As EventArgs) Handles AutoClick_2.Tick
         AutoClick(1)
+    End Sub
+    Private Sub AutoClick_3_Tick(sender As Object, e As EventArgs) Handles AutoClick_3.Tick
+        AutoClick(2)
     End Sub
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
         MessageBox.Show("Home")

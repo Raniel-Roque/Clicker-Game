@@ -68,4 +68,10 @@ Public Class Shop
         Shop2.BringToFront()
         Me.Hide()
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        ShopCosmetic.Show()
+        ShopCosmetic.BringToFront()
+        Me.Hide()
+    End Sub
 End Class

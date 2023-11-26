@@ -31,9 +31,10 @@ Partial Class ClickerMain
         Me.Settings = New System.Windows.Forms.PictureBox()
         Me.Home = New System.Windows.Forms.PictureBox()
         Me.MoneyBorder = New System.Windows.Forms.PictureBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BotMoneyLabel = New System.Windows.Forms.TextBox()
         Me.DisposeMe = New System.Windows.Forms.TextBox()
+        Me.AutoClick_2 = New System.Windows.Forms.Timer(Me.components)
+        Me.AutoClick_3 = New System.Windows.Forms.Timer(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Shop = New System.Windows.Forms.Button()
@@ -45,7 +46,6 @@ Partial Class ClickerMain
         Me.MainButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.AutoClick_2 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Home, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -158,6 +158,14 @@ Partial Class ClickerMain
         Me.DisposeMe.TabIndex = 0
         Me.DisposeMe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'AutoClick_2
+        '
+        Me.AutoClick_2.Interval = 5000
+        '
+        'AutoClick_3
+        '
+        Me.AutoClick_3.Interval = 10000
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
@@ -182,7 +190,7 @@ Partial Class ClickerMain
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = Global.Clicker_Game.My.Resources.Resources.MiniG_Icon
+        Me.Button1.Image = Global.Clicker_Game.My.Resources.Resources.Stats1
         Me.Button1.Location = New System.Drawing.Point(181, 423)
         Me.Button1.Margin = New System.Windows.Forms.Padding(0)
         Me.Button1.Name = "Button1"
@@ -301,10 +309,6 @@ Partial Class ClickerMain
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
         '
-        'AutoClick_2
-        '
-        Me.AutoClick_2.Interval = 5000
-        '
         'ClickerMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -350,7 +354,6 @@ Partial Class ClickerMain
     Friend WithEvents MoneyBorder As PictureBox
     Friend WithEvents Home As PictureBox
     Friend WithEvents Settings As PictureBox
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents BotMoneyLabel As TextBox
@@ -366,4 +369,5 @@ Partial Class ClickerMain
     Friend WithEvents Button2 As Button
     Friend WithEvents DisposeMe As TextBox
     Public WithEvents AutoClick_2 As Timer
+    Public WithEvents AutoClick_3 As Timer
 End Class
