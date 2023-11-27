@@ -162,7 +162,7 @@ Partial Class Shop
         Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.DisposeMe.Location = New System.Drawing.Point(0, 60)
+        Me.DisposeMe.Location = New System.Drawing.Point(590, 108)
         Me.DisposeMe.MaxLength = 0
         Me.DisposeMe.Name = "DisposeMe"
         Me.DisposeMe.ReadOnly = True

@@ -253,6 +253,9 @@
   <data name="Pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Settings_BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Shiba_Inu_Cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shiba_Inu_Cat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

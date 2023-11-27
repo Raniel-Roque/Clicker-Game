@@ -4,7 +4,6 @@ Public Class ClickerMain
     Public timers As New List(Of Timer)
     Private Sub ClickerMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
         GData.Display()
         timers.Add(AutoClick_1)
         timers.Add(AutoClick_2)
@@ -16,20 +15,12 @@ Public Class ClickerMain
         Catch ex As OverflowException
             GData.Money = ULong.MaxValue
             GData.Click = ULong.MaxValue
-            For i As Integer = 0 To Max.Length - 1
+            For i As Integer = 0 To 6
                 GData.Max(i) = True
             Next
 
             For Each timer As Timer In timers
                 timer.Enabled = False
-            Next
-
-            For i As Integer = 0 To Max.Length - 1
-                Dim UPButt As Button = CType(ShopMain.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
-                If UPButt IsNot Nothing Then
-                    UPButt.Text = String.Format("Level Max")
-                    UPButt.Enabled = False
-                End If
             Next
         End Try
 
@@ -68,6 +59,7 @@ Public Class ClickerMain
 
         GData.Display()
     End Sub
+    Dim SettingsMainOpen As SettingsMain
     Dim StatsMain As Stats
     Dim AchievementMain As Achievement
     Dim ShopMain As Shop
@@ -111,7 +103,6 @@ Public Class ClickerMain
         ShopMain.Show()
         Me.Hide()
     End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Achievement.Click
         If AchievementMain Is Nothing OrElse AchievementMain.IsDisposed Then
             AchievementMain = New Achievement
@@ -130,6 +121,18 @@ Public Class ClickerMain
         StatsMain.Show()
         Me.Hide()
     End Sub
+    Private Sub Settings_Click(sender As Object, e As EventArgs) Handles Settings.Click
+        If SettingsMainOpen Is Nothing OrElse SettingsMainOpen.IsDisposed Then
+            SettingsMainOpen = New SettingsMain
+        End If
+
+        SettingsMainOpen.BringToFront()
+        SettingsMainOpen.Show()
+        Me.Hide()
+    End Sub
+    Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
+        MessageBox.Show("Home")
+    End Sub
     Private Sub AutoClick_1_Tick(sender As Object, e As EventArgs) Handles AutoClick_1.Tick
         AutoClick(0)
     End Sub
@@ -139,18 +142,11 @@ Public Class ClickerMain
     Private Sub AutoClick_3_Tick(sender As Object, e As EventArgs) Handles AutoClick_3.Tick
         AutoClick(2)
     End Sub
-    Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
-        MessageBox.Show("Home")
-    End Sub
     Private Sub Home_Enter(sender As Object, e As EventArgs) Handles Home.MouseEnter
         Home.BackColor = Color.FromArgb(252, 215, 215)
     End Sub
     Private Sub Home_NotEnter(sender As Object, e As EventArgs) Handles Home.MouseLeave
         Home.BackColor = Color.FromArgb(252, 228, 228)
-    End Sub
-
-    Private Sub Settings_Click(sender As Object, e As EventArgs) Handles Settings.Click
-        MessageBox.Show("Settings")
     End Sub
     Private Sub Settings_Enter(sender As Object, e As EventArgs) Handles Settings.MouseEnter
         Settings.BackColor = Color.FromArgb(252, 215, 215)

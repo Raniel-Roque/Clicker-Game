@@ -3,7 +3,6 @@
 Public Class Shop
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
 
         For i As Integer = 0 To 3
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
@@ -29,10 +28,16 @@ Public Class Shop
     Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
         ClickerMain.BringToFront()
+        ShopCosmetic.Dispose()
+        Shop2.Dispose()
+        Shop3.Dispose()
     End Sub
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         ClickerMain.Show()
         ClickerMain.BringToFront()
+        ShopCosmetic.Dispose()
+        Shop2.Dispose()
+        Shop3.Dispose()
         Me.Dispose()
     End Sub
     Private Sub UP1_Click(sender As Object, e As EventArgs) Handles UP1.Click
@@ -55,7 +60,7 @@ Public Class Shop
 
     Private Sub DisplayLoop_Tick(sender As Object, e As EventArgs) Handles DisplayLoop.Tick
         If Money < ULong.MaxValue Then
-            TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
+            TopMoneyLabel.Text = String.Format("${0:N0}", GData.Money)
         Else
             TopMoneyLabel.Text = "Ascend Now!"
             GData.Money = ULong.MaxValue

@@ -3,7 +3,6 @@
 Public Class Shop2
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
 
         For i As Integer = 4 To 7
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
@@ -11,6 +10,10 @@ Public Class Shop2
             If Max(i) = True OrElse Level(i) >= ULong.MaxValue Then
                 UPLabel.Text = String.Format("Level Max")
                 UPButt.Enabled = False
+                If i = 7 Then
+                    UPLabel.Text = String.Format("Level {0:N0}", Level(i))
+                    UPButt.Enabled = True
+                End If
             Else
                 UPLabel.Text = String.Format("Level {0:N0}", Level(i))
                 If i = 5 Then
@@ -68,9 +71,11 @@ Public Class Shop2
             LevelLabel8.Text = String.Format("Level {0:N0}", Level(7))
             GData.Money = 0UL
             GData.Click = 1UL
-            For i As Integer = 0 To 6
-                GData.Level(i) = 0
+            For i As Integer = 0 To Max.Length - 1
                 GData.Max(i) = False
+                If i <= 6 Then
+                    GData.Level(i) = 0
+                End If
             Next
 
             ClickerMain.AutoClick_1.Enabled = False
@@ -83,18 +88,21 @@ Public Class Shop2
             GData.AutoClickValue(0) = 5UL
             GData.AutoClickValue(1) = 500UL
 
-            TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
+            TopMoneyLabel.Text = String.Format("${0:N0}", GData.Money)
             GData.Display()
 
             ClickerMain.Show()
             ClickerMain.BringToFront()
+            ShopCosmetic.Dispose()
+            Shop3.Dispose()
+            Shop.Dispose()
             Me.Dispose()
         End If
     End Sub
 
     Private Sub DisplayLoop_Tick(sender As Object, e As EventArgs) Handles DisplayLoop.Tick
         If Money < ULong.MaxValue Then
-            TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
+            TopMoneyLabel.Text = String.Format("${0:N0}", GData.Money)
         Else
             TopMoneyLabel.Text = "Ascend Now!"
             GData.Money = ULong.MaxValue

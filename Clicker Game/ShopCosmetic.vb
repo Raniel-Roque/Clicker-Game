@@ -2,7 +2,6 @@
 Public Class ShopCosmetic
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
 
         Select Case Cosmetic
             Case 0

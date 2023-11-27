@@ -1,8 +1,8 @@
 ﻿Module GData
     'Main Money
     Public Money As ULong = 0UL
-    Public Click As ULong = 1000000UL
-    Public Asc As ULong = 60UL
+    Public Click As ULong = 1UL
+    Public Asc As ULong = 0UL
     Public AscCount As ULong = 0UL
     Public Rebirth As ULong = 0UL
     Public FirstClick As Boolean = False
@@ -38,21 +38,28 @@
 
     Public Achievement() As Boolean = {False, False, False, False, False}
     'Global Functions
-    Public Sub Clicker(ByVal Click_Count As Integer)
-        If Click < ULong.MaxValue Then
+    Public Sub Clicker(ByVal Click_Count As ULong)
+        If Click_Count < ULong.MaxValue Then
             Click += Click_Count
         Else
             For i As Integer = 0 To Max.Length - 1
-                If i = 0 OrElse i Mod 3 = 0 Then
+                If i = 0 OrElse i = 3 OrElse i = 6 OrElse i = 8 Then
                     GData.Max(i) = True
                 End If
             Next
+            Shop.UP1.Enabled = False
+            Shop.UP4.Enabled = False
+            Shop2.UP7.Enabled = False
+            Shop3.UP9.Enabled = False
+
+            Shop2.LevelLabel7.Text = "Level Max"
+            Shop3.LevelLabel9.Text = "Level Max"
         End If
     End Sub
     Public Sub Display()
         If Money < ULong.MaxValue Then
-            ClickerMain.TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
-            ClickerMain.BotMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
+            ClickerMain.TopMoneyLabel.Text = String.Format("${0:N0}", GData.Money)
+            ClickerMain.BotMoneyLabel.Text = String.Format("${0:N0}", GData.Money)
         Else
             ClickerMain.TopMoneyLabel.Text = "Ascend Now!"
             ClickerMain.BotMoneyLabel.Text = "Maxed Cash! Ascend Now!"

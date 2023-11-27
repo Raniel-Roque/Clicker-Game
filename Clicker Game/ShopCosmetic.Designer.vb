@@ -24,6 +24,7 @@ Partial Class ShopCosmetic
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TopMoneyLabel = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -58,8 +59,8 @@ Partial Class ShopCosmetic
         Me.AscendCoin = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,7 +76,6 @@ Partial Class ShopCosmetic
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -92,6 +92,16 @@ Partial Class ShopCosmetic
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(344, 60)
         Me.Panel1.TabIndex = 12
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Clicker_Game.My.Resources.Resources.money_bag
+        Me.PictureBox4.Location = New System.Drawing.Point(10, 10)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(47, 47)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 70
+        Me.PictureBox4.TabStop = False
         '
         'PictureBox1
         '
@@ -154,7 +164,7 @@ Partial Class ShopCosmetic
         Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.DisposeMe.Location = New System.Drawing.Point(0, 60)
+        Me.DisposeMe.Location = New System.Drawing.Point(471, 98)
         Me.DisposeMe.MaxLength = 0
         Me.DisposeMe.Name = "DisposeMe"
         Me.DisposeMe.ReadOnly = True
@@ -480,16 +490,6 @@ Partial Class ShopCosmetic
         Me.PictureBox7.TabIndex = 68
         Me.PictureBox7.TabStop = False
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Clicker_Game.My.Resources.Resources.money_bag
-        Me.PictureBox4.Location = New System.Drawing.Point(10, 10)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(47, 47)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 70
-        Me.PictureBox4.TabStop = False
-        '
         'ShopCosmetic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -530,6 +530,7 @@ Partial Class ShopCosmetic
         Me.Text = "Shop"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).EndInit()
@@ -545,7 +546,6 @@ Partial Class ShopCosmetic
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -4,14 +4,17 @@ Imports System.Reflection
 Public Class Shop3
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
 
         For i As Integer = 8 To 11
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)
             Dim UPLabel As Label = CType(Me.Controls.Find("LevelLabel" & (i + 1).ToString, True).FirstOrDefault(), Label)
             If Max(i) = True OrElse Level(i) >= ULong.MaxValue Then
-                UPLabel.Text = String.Format("Level Max")
+                UPLabel.Text = String.Format("Level {0:N0} - Max Cash", Level(i))
                 UPButt.Enabled = False
+                If i = 11 Then
+                    UPLabel.Text = String.Format("Level {0:N0}", Level(i))
+                    UPButt.Enabled = True
+                End If
             Else
                 UPLabel.Text = String.Format("Level {0:N0}", Level(i))
                 If i = 10 Then
@@ -56,7 +59,12 @@ Public Class Shop3
             Asc -= Costs(8)
             Level(8) += 1UL
             LevelLabel9.Text = String.Format("Level {0:N0}", Level(8))
-            GData.Clicker(GData.Click * 0.25)
+            Try
+                GData.Clicker(GData.Click * 0.25)
+            Catch ex As OverflowException
+                GData.Clicker(ULong.MaxValue)
+            End Try
+
             GData.Display()
             TopMoneyLabel.Text = String.Format("Ascenscion Coins: {0:N0}", GData.Asc)
         End If
