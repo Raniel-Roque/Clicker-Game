@@ -162,7 +162,7 @@ Partial Class SettingsMain
         Me.DoubleBuffered = True
         Me.Name = "SettingsMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Statistics"
+        Me.Text = "Settings"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()

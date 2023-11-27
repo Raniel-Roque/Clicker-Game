@@ -107,6 +107,12 @@
     <Compile Include="SettingsMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SettingsMusic.Designer.vb">
+      <DependentUpon>SettingsMusic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsMusic.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Shop.Designer.vb">
       <DependentUpon>Shop.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsMain.resx">
       <DependentUpon>SettingsMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsMusic.resx">
+      <DependentUpon>SettingsMusic.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shop.resx">
       <DependentUpon>Shop.vb</DependentUpon>
@@ -328,6 +337,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Settings_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max_Volume_Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No_Volume_Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cats - TLT.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nyan Cat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bongo Cat Song - CG5.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

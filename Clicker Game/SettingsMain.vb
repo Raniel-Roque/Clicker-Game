@@ -12,4 +12,14 @@ Public Class SettingsMain
         ClickerMain.BringToFront()
         Me.Dispose()
     End Sub
+    Dim SettingMusicMain As SettingsMusic
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If SettingMusicMain Is Nothing OrElse SettingMusicMain.IsDisposed Then
+            SettingMusicMain = New SettingsMusic
+        End If
+
+        SettingMusicMain.BringToFront()
+        SettingMusicMain.Show()
+        Me.Hide()
+    End Sub
 End Class

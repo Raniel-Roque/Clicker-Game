@@ -1,4 +1,8 @@
 ﻿Module GData
+    'Settings
+    Public Volume = True
+    Public MChosen As Integer = 2
+
     'Main Money
     Public Money As ULong = 0UL
     Public Click As ULong = 1UL

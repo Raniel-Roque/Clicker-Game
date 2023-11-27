@@ -141,6 +141,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Bongo_Cat_Song___CG5() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Bongo_Cat_Song___CG5", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Cat_AutoPaw_1() As System.Drawing.Bitmap
@@ -217,6 +226,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("Cat_Paw_2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Cats___TLT() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Cats___TLT", resourceCulture)
             End Get
         End Property
         
@@ -343,6 +361,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Max_Volume_Final() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Max_Volume_Final", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property MiniG_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("MiniG_Icon", resourceCulture)
@@ -357,6 +385,35 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("money_bag", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Music_BG() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Music_BG", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property No_Volume_Final() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("No_Volume_Final", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Nyan_Cat() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Nyan_Cat", resourceCulture)
             End Get
         End Property
         
