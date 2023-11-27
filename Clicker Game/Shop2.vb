@@ -46,6 +46,7 @@ Public Class Shop2
 
         If Level(4) > 0 AndAlso DisposeUnlock1 IsNot Nothing Then
             DisposeUnlock1.Dispose()
+            ClickerMain.HKitty.Image = My.Resources.Clicker_Main_HKitty
         End If
     End Sub
     Private Sub UP6_Click(sender As Object, e As EventArgs) Handles UP6.Click
@@ -56,7 +57,12 @@ Public Class Shop2
     End Sub
     Private Sub UP8_Click(sender As Object, e As EventArgs) Handles UP8.Click
         If Money - Costs(7) >= 0 Then
+            If GData.Achievement(3) = False Then
+                GData.Achievement(3) = True
+            End If
+
             Asc += 1UL
+            AscCount += 1UL
             Money = 0
             Level(7) += 1UL
             LevelLabel8.Text = String.Format("Level {0:N0}", Level(7))
@@ -71,6 +77,8 @@ Public Class Shop2
             ClickerMain.AutoClick_2.Enabled = False
             ClickerMain.AutoClick_1.Interval = 2000
             ClickerMain.AutoClick_2.Interval = 5000
+            ClickerMain.GField.Image = Nothing
+            ClickerMain.HKitty.Image = Nothing
 
             GData.AutoClickValue(0) = 5UL
             GData.AutoClickValue(1) = 500UL
@@ -107,7 +115,7 @@ Public Class Shop2
         Me.Hide()
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click, PictureBox7.Click
         ShopCosmetic.Show()
         ShopCosmetic.BringToFront()
         Me.Hide()

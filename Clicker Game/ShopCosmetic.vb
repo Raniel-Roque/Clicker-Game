@@ -93,7 +93,7 @@ Public Class ShopCosmetic
             ClickerMain.MainButton.Image = CosmeticList(Cosmetic + 1)
         End If
     End Sub
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click, PictureBox5.Click
         Shop.Show()
         Shop.BringToFront()
         Me.Hide()

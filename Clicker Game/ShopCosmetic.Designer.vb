@@ -56,6 +56,9 @@ Partial Class ShopCosmetic
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.AscendCoin = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,11 +73,15 @@ Partial Class ShopCosmetic
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.TopMoneyLabel)
         Me.Panel1.Controls.Add(Me.Panel2)
@@ -89,6 +96,7 @@ Partial Class ShopCosmetic
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.Clicker_Game.My.Resources.Resources.X
         Me.PictureBox1.Location = New System.Drawing.Point(290, 10)
         Me.PictureBox1.Name = "PictureBox1"
@@ -121,6 +129,7 @@ Partial Class ShopCosmetic
         '
         'Settings
         '
+        Me.Settings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Settings.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
         Me.Settings.Location = New System.Drawing.Point(285, 7)
         Me.Settings.Name = "Settings"
@@ -284,6 +293,7 @@ Partial Class ShopCosmetic
         'UP8
         '
         Me.UP8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.UP8.FlatAppearance.BorderSize = 0
         Me.UP8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UP8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
@@ -308,6 +318,7 @@ Partial Class ShopCosmetic
         'UP7
         '
         Me.UP7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.UP7.FlatAppearance.BorderSize = 0
         Me.UP7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UP7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
@@ -362,6 +373,7 @@ Partial Class ShopCosmetic
         'UP6
         '
         Me.UP6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.UP6.FlatAppearance.BorderSize = 0
         Me.UP6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UP6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
@@ -376,6 +388,7 @@ Partial Class ShopCosmetic
         'UP5
         '
         Me.UP5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.UP5.FlatAppearance.BorderSize = 0
         Me.UP5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UP5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
@@ -409,7 +422,8 @@ Partial Class ShopCosmetic
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Shop_Type
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.PictureBox3.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_13
         Me.PictureBox3.Location = New System.Drawing.Point(177, 73)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(157, 36)
@@ -419,6 +433,7 @@ Partial Class ShopCosmetic
         '
         'PictureBox2
         '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.PictureBox2.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Shop_Type
         Me.PictureBox2.Location = New System.Drawing.Point(10, 73)
         Me.PictureBox2.Name = "PictureBox2"
@@ -441,12 +456,48 @@ Partial Class ShopCosmetic
         '
         Me.AscendCoin.Enabled = True
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox5.Image = Global.Clicker_Game.My.Resources.Resources.UPGRADE
+        Me.PictureBox5.Location = New System.Drawing.Point(22, 73)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(129, 36)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 69
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.PictureBox7.Image = Global.Clicker_Game.My.Resources.Resources.SKIN
+        Me.PictureBox7.Location = New System.Drawing.Point(191, 77)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(127, 27)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 68
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Clicker_Game.My.Resources.Resources.money_bag
+        Me.PictureBox4.Location = New System.Drawing.Point(10, 10)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(47, 47)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 70
+        Me.PictureBox4.TabStop = False
+        '
         'ShopCosmetic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(344, 511)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.UP8)
         Me.Controls.Add(Me.CostLabel)
@@ -492,6 +543,9 @@ Partial Class ShopCosmetic
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -529,4 +583,7 @@ Partial Class ShopCosmetic
     Friend WithEvents UP8 As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents AscendCoin As Timer
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

@@ -1,17 +1,16 @@
 ﻿Module GData
-    'Save State
-
     'Main Money
     Public Money As ULong = 0UL
-    Public Click As ULong = 1UL
-    Public Asc As ULong = 10UL
+    Public Click As ULong = 1000000UL
+    Public Asc As ULong = 60UL
+    Public AscCount As ULong = 0UL
     Public Rebirth As ULong = 0UL
     Public FirstClick As Boolean = False
 
     'Upgrades
     Public Costs() = {
         10, 100, 500, 1000,
-        3000, 5000, 1000, 50000,
+        3000, 5000, 10000, 50000,
         1, 1, 1, 5
     }
     Public Max() = {
@@ -26,6 +25,7 @@
     }
 
     Public AutoClickValue() = {5UL, 500UL, 5000UL}
+
     'Cosmetics
     Public CosmeticUnlocked() = {True, False, False, False}
     Public Cosmetic = 0
@@ -36,6 +36,7 @@
         My.Resources.Black_Main_1, My.Resources.Black_Main_2
     }
 
+    Public Achievement() As Boolean = {False, False, False, False, False}
     'Global Functions
     Public Sub Clicker(ByVal Click_Count As Integer)
         If Click < ULong.MaxValue Then
@@ -82,6 +83,10 @@
             UPLabel.Text = String.Format("Level {0:N0}", Level(Index))
             GData.Clicker(Click_Value)
             GData.Display()
+
+            If GData.Achievement(1) = False Then
+                GData.Achievement(1) = True
+            End If
         End If
     End Sub
     Public Sub AutoClickUpgrade_Value(
@@ -95,6 +100,9 @@
                                       )
 
         If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
+            If GData.Achievement(1) = False Then
+                GData.Achievement(1) = True
+            End If
             Money -= Costs(Index)
             Level(Index) += 1UL
             UPLabel.Text = String.Format("Level {0:N0}", Level(Index))
@@ -121,6 +129,9 @@
                                       )
 
         If Level(Index) = 0 AndAlso Money - Costs(Index) >= 0 Then
+            If GData.Achievement(1) = False Then
+                GData.Achievement(1) = True
+            End If
             Money -= Costs(Index)
             Level(Index) += 1UL
             UPLabel.Text = String.Format("Level {0:N0} / 10", Level(Index))

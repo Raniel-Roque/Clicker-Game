@@ -31,22 +31,6 @@ Partial Class Shop
         Me.MoneyBorder = New System.Windows.Forms.PictureBox()
         Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.DisplayLoop = New System.Windows.Forms.Timer(Me.components)
-        Me.UP3 = New System.Windows.Forms.Button()
-        Me.UP2 = New System.Windows.Forms.Button()
-        Me.UP1 = New System.Windows.Forms.Button()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.UP4 = New System.Windows.Forms.Button()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -65,10 +49,33 @@ Partial Class Shop
         Me.Label17 = New System.Windows.Forms.Label()
         Me.DisposeUnlock1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.UP4 = New System.Windows.Forms.Button()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.UP3 = New System.Windows.Forms.Button()
+        Me.UP2 = New System.Windows.Forms.Button()
+        Me.UP1 = New System.Windows.Forms.Button()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,11 +83,8 @@ Partial Class Shop
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -100,6 +104,7 @@ Partial Class Shop
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox1.Image = Global.Clicker_Game.My.Resources.Resources.X
         Me.PictureBox1.Location = New System.Drawing.Point(290, 10)
         Me.PictureBox1.Name = "PictureBox1"
@@ -132,6 +137,7 @@ Partial Class Shop
         '
         'Settings
         '
+        Me.Settings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Settings.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
         Me.Settings.Location = New System.Drawing.Point(285, 7)
         Me.Settings.Name = "Settings"
@@ -167,183 +173,6 @@ Partial Class Shop
         'DisplayLoop
         '
         Me.DisplayLoop.Enabled = True
-        '
-        'UP3
-        '
-        Me.UP3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP3.FlatAppearance.BorderSize = 0
-        Me.UP3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP3.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoSpeed_1
-        Me.UP3.Location = New System.Drawing.Point(22, 294)
-        Me.UP3.Name = "UP3"
-        Me.UP3.Size = New System.Drawing.Size(64, 66)
-        Me.UP3.TabIndex = 34
-        Me.UP3.UseVisualStyleBackColor = False
-        '
-        'UP2
-        '
-        Me.UP2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP2.FlatAppearance.BorderSize = 0
-        Me.UP2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP2.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoPaw_1
-        Me.UP2.Location = New System.Drawing.Point(22, 208)
-        Me.UP2.Name = "UP2"
-        Me.UP2.Size = New System.Drawing.Size(64, 66)
-        Me.UP2.TabIndex = 33
-        Me.UP2.UseVisualStyleBackColor = False
-        '
-        'UP1
-        '
-        Me.UP1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP1.FlatAppearance.BorderSize = 0
-        Me.UP1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP1.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_1
-        Me.UP1.Location = New System.Drawing.Point(22, 122)
-        Me.UP1.Name = "UP1"
-        Me.UP1.Size = New System.Drawing.Size(64, 66)
-        Me.UP1.TabIndex = 32
-        Me.UP1.UseVisualStyleBackColor = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
-        Me.PictureBox11.Location = New System.Drawing.Point(14, 291)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 26
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
-        Me.PictureBox9.Location = New System.Drawing.Point(14, 205)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 25
-        Me.PictureBox9.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.PictureBox6.Image = Global.Clicker_Game.My.Resources.Resources._NEXT
-        Me.PictureBox6.Location = New System.Drawing.Point(242, 471)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(75, 31)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 23
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Back_Next
-        Me.PictureBox5.Location = New System.Drawing.Point(225, 463)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(107, 45)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 22
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Shop_Type
-        Me.PictureBox3.Location = New System.Drawing.Point(177, 73)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(157, 36)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 20
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Shop_Type
-        Me.PictureBox2.Location = New System.Drawing.Point(10, 73)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(155, 36)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 19
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
-        Me.PictureBox8.Location = New System.Drawing.Point(14, 119)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 19
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
-        Me.PictureBox12.Location = New System.Drawing.Point(100, 121)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(232, 80)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox12.TabIndex = 36
-        Me.PictureBox12.TabStop = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
-        Me.PictureBox13.Location = New System.Drawing.Point(100, 207)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(232, 80)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox13.TabIndex = 37
-        Me.PictureBox13.TabStop = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
-        Me.PictureBox15.Location = New System.Drawing.Point(100, 293)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(232, 80)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox15.TabIndex = 38
-        Me.PictureBox15.TabStop = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
-        Me.PictureBox14.Location = New System.Drawing.Point(100, 377)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(232, 80)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 42
-        Me.PictureBox14.TabStop = False
-        '
-        'UP4
-        '
-        Me.UP4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP4.FlatAppearance.BorderSize = 0
-        Me.UP4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.UP4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
-        Me.UP4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.UP4.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_2
-        Me.UP4.Location = New System.Drawing.Point(22, 377)
-        Me.UP4.Name = "UP4"
-        Me.UP4.Size = New System.Drawing.Size(64, 66)
-        Me.UP4.TabIndex = 41
-        Me.UP4.UseVisualStyleBackColor = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
-        Me.PictureBox10.Location = New System.Drawing.Point(14, 375)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(80, 80)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 40
-        Me.PictureBox10.TabStop = False
         '
         'Label1
         '
@@ -556,12 +385,222 @@ Partial Class Shop
         Me.Label2.TabIndex = 61
         Me.Label2.Text = "1 / 3"
         '
+        'PictureBox14
+        '
+        Me.PictureBox14.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
+        Me.PictureBox14.Location = New System.Drawing.Point(100, 377)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(232, 80)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox14.TabIndex = 42
+        Me.PictureBox14.TabStop = False
+        '
+        'UP4
+        '
+        Me.UP4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.UP4.FlatAppearance.BorderSize = 0
+        Me.UP4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP4.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_2
+        Me.UP4.Location = New System.Drawing.Point(22, 377)
+        Me.UP4.Name = "UP4"
+        Me.UP4.Size = New System.Drawing.Size(64, 66)
+        Me.UP4.TabIndex = 41
+        Me.UP4.UseVisualStyleBackColor = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
+        Me.PictureBox10.Location = New System.Drawing.Point(14, 375)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox10.TabIndex = 40
+        Me.PictureBox10.TabStop = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
+        Me.PictureBox15.Location = New System.Drawing.Point(100, 293)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(232, 80)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox15.TabIndex = 38
+        Me.PictureBox15.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
+        Me.PictureBox13.Location = New System.Drawing.Point(100, 207)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(232, 80)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox13.TabIndex = 37
+        Me.PictureBox13.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Money_2
+        Me.PictureBox12.Location = New System.Drawing.Point(100, 121)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(232, 80)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox12.TabIndex = 36
+        Me.PictureBox12.TabStop = False
+        '
+        'UP3
+        '
+        Me.UP3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.UP3.FlatAppearance.BorderSize = 0
+        Me.UP3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP3.Image = Global.Clicker_Game.My.Resources.Resources.Lasagna
+        Me.UP3.Location = New System.Drawing.Point(22, 294)
+        Me.UP3.Name = "UP3"
+        Me.UP3.Size = New System.Drawing.Size(64, 66)
+        Me.UP3.TabIndex = 34
+        Me.UP3.UseVisualStyleBackColor = False
+        '
+        'UP2
+        '
+        Me.UP2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.UP2.FlatAppearance.BorderSize = 0
+        Me.UP2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP2.Image = Global.Clicker_Game.My.Resources.Resources.Cat_AutoPaw_1
+        Me.UP2.Location = New System.Drawing.Point(22, 208)
+        Me.UP2.Name = "UP2"
+        Me.UP2.Size = New System.Drawing.Size(64, 66)
+        Me.UP2.TabIndex = 33
+        Me.UP2.UseVisualStyleBackColor = False
+        '
+        'UP1
+        '
+        Me.UP1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.UP1.FlatAppearance.BorderSize = 0
+        Me.UP1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.UP1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(140, Byte), Integer), CType(CType(157, Byte), Integer))
+        Me.UP1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.UP1.Image = Global.Clicker_Game.My.Resources.Resources.Cat_Paw_1
+        Me.UP1.Location = New System.Drawing.Point(22, 122)
+        Me.UP1.Name = "UP1"
+        Me.UP1.Size = New System.Drawing.Size(64, 66)
+        Me.UP1.TabIndex = 32
+        Me.UP1.UseVisualStyleBackColor = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
+        Me.PictureBox11.Location = New System.Drawing.Point(14, 291)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 26
+        Me.PictureBox11.TabStop = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
+        Me.PictureBox9.Location = New System.Drawing.Point(14, 205)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox9.TabIndex = 25
+        Me.PictureBox9.TabStop = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox6.Image = Global.Clicker_Game.My.Resources.Resources._NEXT
+        Me.PictureBox6.Location = New System.Drawing.Point(242, 471)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(75, 31)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 23
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox5.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Back_Next
+        Me.PictureBox5.Location = New System.Drawing.Point(225, 463)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(107, 45)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 22
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_Shop_Type
+        Me.PictureBox3.Location = New System.Drawing.Point(177, 73)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(157, 36)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 20
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.PictureBox2.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_13
+        Me.PictureBox2.Location = New System.Drawing.Point(10, 73)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(155, 36)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 19
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
+        Me.PictureBox8.Location = New System.Drawing.Point(14, 119)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox8.TabIndex = 19
+        Me.PictureBox8.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.PictureBox4.Image = Global.Clicker_Game.My.Resources.Resources.UPGRADE
+        Me.PictureBox4.Location = New System.Drawing.Point(22, 73)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(129, 36)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 62
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox7.Image = Global.Clicker_Game.My.Resources.Resources.SKIN
+        Me.PictureBox7.Location = New System.Drawing.Point(191, 77)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(127, 27)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox7.TabIndex = 63
+        Me.PictureBox7.TabStop = False
+        '
         'Shop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(204, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(344, 511)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DisposeUnlock1)
         Me.Controls.Add(Me.Label17)
@@ -606,6 +645,11 @@ Partial Class Shop
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyBorder, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -613,11 +657,8 @@ Partial Class Shop
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -664,4 +705,6 @@ Partial Class Shop
     Friend WithEvents Label17 As Label
     Friend WithEvents DisposeUnlock1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
 End Class

@@ -41,10 +41,6 @@ Public Class ClickerMain
 
     Private Sub MainButton_MouseDown(sender As Object, e As MouseEventArgs) Handles MainButton.MouseDown
         MainButton.Image = CosmeticList(Cosmetic)
-        If FirstClick = False Then
-            MessageBox.Show("First Click!")
-            FirstClick = True
-        End If
 
         Try
             GData.Money += GData.Click
@@ -60,13 +56,20 @@ Public Class ClickerMain
             Next
         End Try
 
-        If Money = 1000000 Then
-            MessageBox.Show("1M Money!")
+        If FirstClick = False Then
+            FirstClick = True
+            GData.Achievement(0) = True
+        End If
+
+        If Money >= 1000000 Then
             CosmeticUnlocked(1) = True
+            GData.Achievement(2) = True
         End If
 
         GData.Display()
     End Sub
+    Dim StatsMain As Stats
+    Dim AchievementMain As Achievement
     Dim ShopMain As Shop
     Dim ShopMain2 As Shop2
     Dim ShopMain3 As Shop3
@@ -109,6 +112,24 @@ Public Class ClickerMain
         Me.Hide()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Achievement.Click
+        If AchievementMain Is Nothing OrElse AchievementMain.IsDisposed Then
+            AchievementMain = New Achievement
+        End If
+
+        AchievementMain.BringToFront()
+        AchievementMain.Show()
+        Me.Hide()
+    End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If StatsMain Is Nothing OrElse StatsMain.IsDisposed Then
+            StatsMain = New Stats
+        End If
+
+        StatsMain.BringToFront()
+        StatsMain.Show()
+        Me.Hide()
+    End Sub
     Private Sub AutoClick_1_Tick(sender As Object, e As EventArgs) Handles AutoClick_1.Tick
         AutoClick(0)
     End Sub

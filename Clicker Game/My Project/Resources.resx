@@ -211,4 +211,55 @@
   <data name="Cookie_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cookie_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rectangle_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SKIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SKIN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UPGRADE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UPGRADE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Achievement_QMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Achievement_QMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ascend_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ascend_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cat_God" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_God.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clicker_Main_EgyptianCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clicker_Main_EgyptianCat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clicker_Main_Garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clicker_Main_Garfield.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clicker_Main_HKitty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clicker_Main_HKitty.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Happy_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Happy_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hello_Kitty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hello_Kitty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lasagna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lasagna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paw_God" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paw_God.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shiba_Inu_Cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shiba_Inu_Cat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Upgrade_Achievement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Upgrade_Achievement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White_Fur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\White_Fur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

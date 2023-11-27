@@ -1,4 +1,5 @@
-﻿Imports System.Reflection
+﻿Imports System.Diagnostics.Tracing
+Imports System.Reflection
 
 Public Class Shop3
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -59,13 +60,14 @@ Public Class Shop3
             GData.Display()
             TopMoneyLabel.Text = String.Format("Ascenscion Coins: {0:N0}", GData.Asc)
         End If
-
-        If Level(4) > 0 AndAlso DisposeUnlock1 IsNot Nothing Then
-            DisposeUnlock1.Dispose()
-        End If
     End Sub
     Private Sub UP10_Click(sender As Object, e As EventArgs) Handles UP10.Click
         If Level(9) = 0 AndAlso Asc - Costs(9) >= 0 Then
+            If DisposeUnlock1 IsNot Nothing Then
+                DisposeUnlock1.Dispose()
+                ClickerMain.CatG.Image = My.Resources.Clicker_Main_EgyptianCat
+            End If
+
             Asc -= Costs(9)
             Level(9) += 1UL
             LevelLabel10.Text = String.Format("Level {0:N0}", Level(9))
@@ -110,6 +112,10 @@ Public Class Shop3
     End Sub
     Private Sub UP12_Click(sender As Object, e As EventArgs) Handles UP12.Click
         If Asc - Costs(11) >= 0 Then
+            If GData.Achievement(4) = False Then
+                GData.Achievement(4) = True
+            End If
+
             CosmeticUnlocked(3) = True
             Rebirth += 1UL
             Level(11) += 1UL
@@ -127,6 +133,9 @@ Public Class Shop3
             ClickerMain.AutoClick_1.Interval = 2000
             ClickerMain.AutoClick_2.Interval = 5000
             ClickerMain.AutoClick_3.Interval = 10000
+            ClickerMain.GField.Image = Nothing
+            ClickerMain.HKitty.Image = Nothing
+            ClickerMain.CatG.Image = Nothing
 
             GData.AutoClickValue(0) = 5UL
             GData.AutoClickValue(1) = 500UL
@@ -150,7 +159,7 @@ Public Class Shop3
         Me.Hide()
     End Sub
 
-    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click, PictureBox7.Click
         ShopCosmetic.Show()
         ShopCosmetic.BringToFront()
         Me.Hide()

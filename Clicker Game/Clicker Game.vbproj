@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Achievement.Designer.vb">
+      <DependentUpon>Achievement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Achievement.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ClickerMain.Designer.vb">
       <DependentUpon>ClickerMain.vb</DependentUpon>
     </Compile>
@@ -119,8 +125,17 @@
     <Compile Include="ShopCosmetic.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Stats.Designer.vb">
+      <DependentUpon>Stats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stats.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Achievement.resx">
+      <DependentUpon>Achievement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClickerMain.resx">
       <DependentUpon>ClickerMain.vb</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShopCosmetic.resx">
       <DependentUpon>ShopCosmetic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stats.resx">
+      <DependentUpon>Stats.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -247,6 +265,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cookie_Main_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPGRADE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SKIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat_God.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_Fur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lasagna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hello_Kitty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shiba_Inu_Cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ascend_Cat_Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy_Cat_Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paw_God.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clicker_Main_HKitty.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clicker_Main_EgyptianCat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clicker_Main_Garfield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achievement_QMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upgrade_Achievement.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
