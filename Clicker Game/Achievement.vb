@@ -2,7 +2,8 @@
 Public Class Achievement
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
+
+        Me.MaximizeBox = False
 
         If GData.Achievement(0) = True Then
             Achieve1.Image = My.Resources.Cat_Click_Main

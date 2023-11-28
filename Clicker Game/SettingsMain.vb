@@ -1,9 +1,10 @@
 ﻿Imports System.Reflection
 Public Class SettingsMain
-    Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
+        Me.MaximizeBox = False
     End Sub
-    Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub Settings_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
         ClickerMain.BringToFront()
     End Sub

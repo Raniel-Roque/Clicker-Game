@@ -679,6 +679,7 @@ Partial Class Shop2
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Shop2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Shop"

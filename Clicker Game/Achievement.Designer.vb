@@ -24,7 +24,9 @@ Partial Class Achievement
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Achievement))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Settings = New System.Windows.Forms.PictureBox()
         Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -50,10 +52,10 @@ Partial Class Achievement
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Settings = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Achieve1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Achieve2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Achieve3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,8 +70,6 @@ Partial Class Achievement
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,6 +85,18 @@ Partial Class Achievement
         Me.Panel1.Size = New System.Drawing.Size(344, 60)
         Me.Panel1.TabIndex = 12
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox1.Image = Global.Clicker_Game.My.Resources.Resources.X
+        Me.PictureBox1.Location = New System.Drawing.Point(290, 10)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(37, 37)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 18
+        Me.PictureBox1.TabStop = False
+        '
         'Panel2
         '
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
@@ -93,13 +105,24 @@ Partial Class Achievement
         Me.Panel2.Size = New System.Drawing.Size(225, 255)
         Me.Panel2.TabIndex = 9
         '
+        'Settings
+        '
+        Me.Settings.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
+        Me.Settings.Location = New System.Drawing.Point(285, 7)
+        Me.Settings.Name = "Settings"
+        Me.Settings.Size = New System.Drawing.Size(47, 47)
+        Me.Settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Settings.TabIndex = 12
+        Me.Settings.TabStop = False
+        '
         'DisposeMe
         '
         Me.DisposeMe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.DisposeMe.Location = New System.Drawing.Point(0, 60)
+        Me.DisposeMe.Location = New System.Drawing.Point(544, 128)
         Me.DisposeMe.MaxLength = 0
         Me.DisposeMe.Name = "DisposeMe"
         Me.DisposeMe.ReadOnly = True
@@ -367,29 +390,6 @@ Partial Class Achievement
         Me.PictureBox9.TabIndex = 25
         Me.PictureBox9.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.Clicker_Game.My.Resources.Resources.X
-        Me.PictureBox1.Location = New System.Drawing.Point(290, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(37, 37)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 18
-        Me.PictureBox1.TabStop = False
-        '
-        'Settings
-        '
-        Me.Settings.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Settings.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
-        Me.Settings.Location = New System.Drawing.Point(285, 7)
-        Me.Settings.Name = "Settings"
-        Me.Settings.Size = New System.Drawing.Size(47, 47)
-        Me.Settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Settings.TabIndex = 12
-        Me.Settings.TabStop = False
-        '
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.Clicker_Game.My.Resources.Resources.Rectangle_BG_Button
@@ -433,10 +433,13 @@ Partial Class Achievement
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Achievement"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Achievements"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Achieve1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Achieve2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Achieve3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -451,8 +454,6 @@ Partial Class Achievement
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

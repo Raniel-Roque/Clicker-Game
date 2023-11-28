@@ -1,8 +1,9 @@
 ﻿Imports System.Reflection
 Public Class Stats
-    Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Stats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
         DisposeMe.Dispose()
+        Me.MaximizeBox = False
 
         Stat1.Text = String.Format("{0:N0}", GData.Click)
         Stat3.Text = String.Format("{0:N0}", GData.AscCount)
@@ -23,7 +24,7 @@ Public Class Stats
         Stat2.Text = String.Format("{0:N0}", AutoClickPower)
 
     End Sub
-    Private Sub Shop_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub Stats_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ClickerMain.Show()
         ClickerMain.BringToFront()
     End Sub

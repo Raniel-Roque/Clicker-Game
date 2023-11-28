@@ -4,6 +4,7 @@ Imports System.Reflection
 Public Class Shop3
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
+        Me.MaximizeBox = False
 
         For i As Integer = 8 To 11
             Dim UPButt As Button = CType(Me.Controls.Find("UP" & (i + 1).ToString, True).FirstOrDefault(), Button)

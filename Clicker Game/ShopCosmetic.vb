@@ -2,6 +2,7 @@
 Public Class ShopCosmetic
     Private Sub Shop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
+        Me.MaximizeBox = False
 
         Select Case Cosmetic
             Case 0

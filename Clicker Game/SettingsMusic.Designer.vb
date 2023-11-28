@@ -173,6 +173,7 @@ Partial Class SettingsMusic
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DisposeMe)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "SettingsMusic"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Statistics"
