@@ -159,6 +159,12 @@
     <Compile Include="Stats.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tutorial.Designer.vb">
+      <DependentUpon>Tutorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Achievement.resx">
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stats.resx">
       <DependentUpon>Stats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial.resx">
+      <DependentUpon>Tutorial.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -386,6 +395,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon_Cat.ico" />
+    <None Include="Resources\T7.png" />
+    <None Include="Resources\Okay.png" />
+    <None Include="Resources\Skip.png" />
+    <None Include="Resources\T4.png" />
+    <None Include="Resources\T3.png" />
+    <None Include="Resources\T2.png" />
+    <None Include="Resources\T1.png" />
+    <None Include="Resources\T8.png" />
+    <None Include="Resources\T6.png" />
+    <None Include="Resources\T5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

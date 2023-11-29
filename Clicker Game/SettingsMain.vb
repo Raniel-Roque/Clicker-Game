@@ -14,6 +14,7 @@ Public Class SettingsMain
         Me.Dispose()
     End Sub
     Dim SettingMusicMain As SettingsMusic
+    Dim TutorialMain As Tutorial
     Dim CredsMain As Credits
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If SettingMusicMain Is Nothing OrElse SettingMusicMain.IsDisposed Then
@@ -26,7 +27,13 @@ Public Class SettingsMain
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If TutorialMain Is Nothing OrElse TutorialMain.IsDisposed Then
+            TutorialMain = New Tutorial
+        End If
 
+        TutorialMain.BringToFront()
+        TutorialMain.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

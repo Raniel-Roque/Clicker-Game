@@ -65,6 +65,7 @@ Public Class ClickerMain
         GData.Display()
     End Sub
     Dim SettingsMainOpen As SettingsMain
+    Dim Load As Loading
     Dim StatsMain As Stats
     Dim AchievementMain As Achievement
     Dim ShopMain As Shop
@@ -136,7 +137,14 @@ Public Class ClickerMain
         Me.Hide()
     End Sub
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
-        MessageBox.Show("Home")
+        If Load Is Nothing OrElse Load.IsDisposed Then
+            Load = New Loading
+        End If
+
+        My.Computer.Audio.Stop()
+        Load.BringToFront()
+        Load.Show()
+        Me.Hide()
     End Sub
     Private Sub AutoClick_1_Tick(sender As Object, e As EventArgs) Handles AutoClick_1.Tick
         AutoClick(0)

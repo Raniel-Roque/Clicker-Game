@@ -14,6 +14,8 @@ Public Class Loading
 
             ProgressBar1.Value += 2
         ElseIf ProgressBar1.Value = ProgressBar1.Maximum Then
+            My.Computer.Audio.Play(My.Resources.Bongo_Cat_Song___CG5, AudioPlayMode.BackgroundLoop)
+            MChosen = 0
             ClickerMain.Show()
             Me.Close()
         End If

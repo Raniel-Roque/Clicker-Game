@@ -60,6 +60,7 @@ Partial Class Loading
         Me.ClientSize = New System.Drawing.Size(360, 550)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
+        Me.Cursor = System.Windows.Forms.Cursors.AppStarting
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
