@@ -1,7 +1,7 @@
 ﻿Module GData
     'Settings
     Public Volume = True
-    Public MChosen As Integer = 2
+    Public MChosen As Integer = 0
 
     'Main Money
     Public Money As ULong = 0UL

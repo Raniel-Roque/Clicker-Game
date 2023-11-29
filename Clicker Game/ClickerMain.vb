@@ -8,9 +8,11 @@ Public Class ClickerMain
         timers.Add(AutoClick_1)
         timers.Add(AutoClick_2)
         timers.Add(AutoClick_3)
-        My.Computer.Audio.Stop()
         My.Computer.Audio.Play(My.Resources.Bongo_Cat_Song___CG5, AudioPlayMode.BackgroundLoop)
         Me.MaximizeBox = False
+    End Sub
+    Private Sub ClickerMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Application.Exit()
     End Sub
     Public Sub AutoClick(ByVal ACValueIndex As Integer)
         Try

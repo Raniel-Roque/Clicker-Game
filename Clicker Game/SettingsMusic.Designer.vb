@@ -29,9 +29,9 @@ Partial Class SettingsMusic
         Me.Settings = New System.Windows.Forms.PictureBox()
         Me.DisposeMe = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.CatsSong = New System.Windows.Forms.Button()
+        Me.Nyan = New System.Windows.Forms.Button()
+        Me.Bongo = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Settings, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,56 +108,57 @@ Partial Class SettingsMusic
         Me.Button1.TabIndex = 13
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'CatsSong
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.BorderSize = 2
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(65, 291)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(225, 35)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Cats - The Living Tombstone"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.CatsSong.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.CatsSong.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.CatsSong.FlatAppearance.BorderSize = 3
+        Me.CatsSong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.CatsSong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.CatsSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CatsSong.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CatsSong.Location = New System.Drawing.Point(65, 334)
+        Me.CatsSong.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.CatsSong.Name = "CatsSong"
+        Me.CatsSong.Size = New System.Drawing.Size(225, 35)
+        Me.CatsSong.TabIndex = 14
+        Me.CatsSong.Text = "Cats - The Living Tombstone"
+        Me.CatsSong.UseVisualStyleBackColor = False
         '
-        'Button3
+        'Nyan
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.BorderSize = 2
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(65, 334)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(225, 35)
-        Me.Button3.TabIndex = 15
-        Me.Button3.Text = "Nyan Cat"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Nyan.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Nyan.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.Nyan.FlatAppearance.BorderSize = 3
+        Me.Nyan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Nyan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.Nyan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Nyan.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Nyan.Location = New System.Drawing.Point(65, 379)
+        Me.Nyan.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.Nyan.Name = "Nyan"
+        Me.Nyan.Size = New System.Drawing.Size(225, 35)
+        Me.Nyan.TabIndex = 15
+        Me.Nyan.Text = "Nyan Cat"
+        Me.Nyan.UseVisualStyleBackColor = False
         '
-        'Button4
+        'Bongo
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button4.FlatAppearance.BorderSize = 2
-        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(65, 379)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(225, 35)
-        Me.Button4.TabIndex = 16
-        Me.Button4.Text = "Bongo Cat - CG5"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Bongo.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.Bongo.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen
+        Me.Bongo.FlatAppearance.BorderSize = 3
+        Me.Bongo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(206, Byte), Integer), CType(CType(211, Byte), Integer))
+        Me.Bongo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(193, Byte), Integer), CType(CType(197, Byte), Integer))
+        Me.Bongo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bongo.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bongo.ForeColor = System.Drawing.Color.DarkGreen
+        Me.Bongo.Location = New System.Drawing.Point(65, 289)
+        Me.Bongo.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.Bongo.Name = "Bongo"
+        Me.Bongo.Size = New System.Drawing.Size(225, 35)
+        Me.Bongo.TabIndex = 16
+        Me.Bongo.Text = "Bongo Cat - CG5"
+        Me.Bongo.UseVisualStyleBackColor = False
         '
         'SettingsMusic
         '
@@ -167,9 +168,9 @@ Partial Class SettingsMusic
         Me.BackgroundImage = Global.Clicker_Game.My.Resources.Resources.Music_BG
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(344, 511)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Bongo)
+        Me.Controls.Add(Me.Nyan)
+        Me.Controls.Add(Me.CatsSong)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.DisposeMe)
@@ -192,7 +193,7 @@ Partial Class SettingsMusic
     Friend WithEvents DisposeMe As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents CatsSong As Button
+    Friend WithEvents Nyan As Button
+    Friend WithEvents Bongo As Button
 End Class

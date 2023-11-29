@@ -121,6 +121,9 @@
   <data name="Ractangle_Home_Bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ractangle_Home_Bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Paw_God" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paw_God.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,44 +133,53 @@
   <data name="Golden_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Golden_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rectangle_Back_Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle_Back_Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Clicker_Main_EgyptianCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clicker_Main_EgyptianCat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cat_Paw_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cat_Paw_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Max_Volume_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Max_Volume_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Stats1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stats.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="No_Volume_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_Volume_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clicker_Main_Garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clicker_Main_Garfield.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rectangle_BG_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle_BG_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Happy_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Happy_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="UPGRADE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UPGRADE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rectangle_BG_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle_BG_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Golden_Main_2_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Golden_Main_2_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Settings_BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Settings_BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Clicker_Main_EgyptianCat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clicker_Main_EgyptianCat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ascend_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ascend_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cat_Paw_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat_Paw_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cat_Click_1_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cat_Click_1_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_NEXT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NEXT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cookie_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cookie_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cat_Click_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Click_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BACK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BACK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +187,11 @@
   <data name="Rectangle_Shop_Type" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle_Shop_Type.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle_Back_Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle_Back_Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Credits" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Credits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money_bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money_bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,8 +199,8 @@
   <data name="Cat_God" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat_God.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Golden_Main_2_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Golden_Main_2_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Clicker_Main_Garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clicker_Main_Garfield.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cat_AutoPaw_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat_AutoPaw_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +208,8 @@
   <data name="Black_Paw_Main_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black_Paw_Main_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Golden_Main_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Golden_Main_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bongo_Cat_Song___CG5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bongo Cat Song - CG5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Pie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,9 +226,6 @@
   <data name="Shop_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Shop_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Black_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Black_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="White_Fur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\White_Fur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -226,17 +238,23 @@
   <data name="Cat_AutoSpeed_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat_AutoSpeed_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cat_Click_Main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cat_Click_Main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cat_Paw_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Paw_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Upgrade_Achievement" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Upgrade_Achievement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Nyan_Cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nyan Cat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Cookie_Main_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cookie_Main_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ascend_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ascend_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cookie_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cookie_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cats___TLT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cats - TLT.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Achieve_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Achieve_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,8 +268,8 @@
   <data name="MiniG_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniG_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rectangle_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rectangle 13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cat_Click_1_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cat_Click_1_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Clicker_Main_HKitty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Clicker_Main_HKitty.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,28 +280,13 @@
   <data name="Cat_Click_Main_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cat_Click_Main_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Paw_God" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paw_God.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Golden_Main_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Golden_Main_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Happy_Cat_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Happy_Cat_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Stats1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stats.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Max_Volume_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Max_Volume_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="No_Volume_Final" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\No_Volume_Final.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bongo_Cat_Song___CG5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bongo Cat Song - CG5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Cats___TLT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cats - TLT.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Nyan_Cat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Nyan Cat.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Credits" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Credits.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
