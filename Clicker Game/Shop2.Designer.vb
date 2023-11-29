@@ -23,6 +23,7 @@ Partial Class Shop2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Shop2))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -239,11 +240,11 @@ Partial Class Shop2
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label5.Location = New System.Drawing.Point(115, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(148, 17)
+        Me.Label5.Size = New System.Drawing.Size(133, 15)
         Me.Label5.TabIndex = 47
         Me.Label5.Text = "Hi Cat's Nemesis (+500)"
         '
@@ -263,11 +264,11 @@ Partial Class Shop2
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label8.Location = New System.Drawing.Point(115, 333)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(115, 17)
+        Me.Label8.Size = New System.Drawing.Size(104, 15)
         Me.Label8.TabIndex = 49
         Me.Label8.Text = "+1500 Click Power"
         '
@@ -287,11 +288,11 @@ Partial Class Shop2
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Label10.Location = New System.Drawing.Point(115, 247)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(177, 17)
+        Me.Label10.Size = New System.Drawing.Size(161, 15)
         Me.Label10.TabIndex = 51
         Me.Label10.Text = "Apple Pie!!! (Faster Autoclick)"
         '
@@ -394,13 +395,13 @@ Partial Class Shop2
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label6.Location = New System.Drawing.Point(115, 418)
+        Me.Label6.Location = New System.Drawing.Point(115, 417)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(194, 13)
+        Me.Label6.Size = New System.Drawing.Size(172, 15)
         Me.Label6.TabIndex = 62
-        Me.Label6.Text = "Resets Progress (Except Ascenscions)"
+        Me.Label6.Text = "+1 ASC (Resets Cash Upgrades)"
         '
         'PictureBox5
         '
@@ -680,6 +681,7 @@ Partial Class Shop2
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Shop2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Shop"

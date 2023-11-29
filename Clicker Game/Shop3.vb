@@ -61,7 +61,7 @@ Public Class Shop3
             Level(8) += 1UL
             LevelLabel9.Text = String.Format("Level {0:N0}", Level(8))
             Try
-                GData.Clicker(GData.Click * 0.25)
+                GData.Clicker(5000)
             Catch ex As OverflowException
                 GData.Clicker(ULong.MaxValue)
             End Try
@@ -79,9 +79,9 @@ Public Class Shop3
 
             Asc -= Costs(9)
             Level(9) += 1UL
-            LevelLabel10.Text = String.Format("Level {0:N0}", Level(9))
             UP11.Enabled = True
             ClickerMain.AutoClick_3.Enabled = True
+            LevelLabel10.Text = String.Format("Level {0:N0}", Level(9))
             TopMoneyLabel.Text = String.Format("Ascenscion Coins: {0:N0}", GData.Asc)
             GData.Display()
             Return

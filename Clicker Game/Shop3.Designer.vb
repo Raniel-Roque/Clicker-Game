@@ -23,6 +23,7 @@ Partial Class Shop3
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Shop3))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -220,13 +221,13 @@ Partial Class Shop3
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label5.Location = New System.Drawing.Point(115, 161)
+        Me.Label5.Location = New System.Drawing.Point(117, 161)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(150, 17)
+        Me.Label5.Size = New System.Drawing.Size(104, 15)
         Me.Label5.TabIndex = 47
-        Me.Label5.Text = "25% Current Click Power"
+        Me.Label5.Text = "+5000 Click Power"
         '
         'LevelLabel9
         '
@@ -244,11 +245,11 @@ Partial Class Shop3
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label8.Location = New System.Drawing.Point(115, 333)
+        Me.Label8.Location = New System.Drawing.Point(117, 333)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(116, 17)
+        Me.Label8.Size = New System.Drawing.Size(103, 15)
         Me.Label8.TabIndex = 49
         Me.Label8.Text = "Boosts Cat Morale"
         '
@@ -268,11 +269,11 @@ Partial Class Shop3
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label10.Location = New System.Drawing.Point(115, 247)
+        Me.Label10.Location = New System.Drawing.Point(117, 247)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(155, 17)
+        Me.Label10.Size = New System.Drawing.Size(138, 15)
         Me.Label10.TabIndex = 51
         Me.Label10.Text = "God of The Cats. (+5000)"
         '
@@ -363,9 +364,9 @@ Partial Class Shop3
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Nirmala UI", 9.0!, System.Drawing.FontStyle.Italic)
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label6.Location = New System.Drawing.Point(115, 418)
+        Me.Label6.Location = New System.Drawing.Point(117, 418)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 15)
         Me.Label6.TabIndex = 62
@@ -651,6 +652,7 @@ Partial Class Shop3
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Shop3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Shop"

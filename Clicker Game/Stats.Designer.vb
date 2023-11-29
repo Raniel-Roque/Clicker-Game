@@ -22,6 +22,7 @@ Partial Class Stats
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Stats))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -113,7 +114,7 @@ Partial Class Stats
         Me.DisposeMe.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DisposeMe.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisposeMe.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(228, Byte), Integer))
-        Me.DisposeMe.Location = New System.Drawing.Point(0, 60)
+        Me.DisposeMe.Location = New System.Drawing.Point(537, 134)
         Me.DisposeMe.MaxLength = 0
         Me.DisposeMe.Name = "DisposeMe"
         Me.DisposeMe.ReadOnly = True
@@ -162,9 +163,9 @@ Partial Class Stats
         Me.Stat1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Stat1.Location = New System.Drawing.Point(113, 121)
         Me.Stat1.Name = "Stat1"
-        Me.Stat1.Size = New System.Drawing.Size(43, 17)
+        Me.Stat1.Size = New System.Drawing.Size(15, 17)
         Me.Stat1.TabIndex = 47
-        Me.Stat1.Text = "10000"
+        Me.Stat1.Text = "1"
         '
         'Stat3
         '
@@ -174,9 +175,9 @@ Partial Class Stats
         Me.Stat3.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Stat3.Location = New System.Drawing.Point(113, 304)
         Me.Stat3.Name = "Stat3"
-        Me.Stat3.Size = New System.Drawing.Size(197, 15)
+        Me.Stat3.Size = New System.Drawing.Size(13, 15)
         Me.Stat3.TabIndex = 49
-        Me.Stat3.Text = "Have 1M Cash. Unlocks Golden Paw"
+        Me.Stat3.Text = "0"
         '
         'Stat2
         '
@@ -186,9 +187,9 @@ Partial Class Stats
         Me.Stat2.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Stat2.Location = New System.Drawing.Point(113, 214)
         Me.Stat2.Name = "Stat2"
-        Me.Stat2.Size = New System.Drawing.Size(70, 15)
+        Me.Stat2.Size = New System.Drawing.Size(13, 15)
         Me.Stat2.TabIndex = 51
-        Me.Stat2.Text = "1st Upgrade"
+        Me.Stat2.Text = "0"
         '
         'Label13
         '
@@ -209,9 +210,9 @@ Partial Class Stats
         Me.Stat4.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.Stat4.Location = New System.Drawing.Point(113, 396)
         Me.Stat4.Name = "Stat4"
-        Me.Stat4.Size = New System.Drawing.Size(77, 13)
+        Me.Stat4.Size = New System.Drawing.Size(13, 13)
         Me.Stat4.TabIndex = 62
-        Me.Stat4.Text = "1st Ascension"
+        Me.Stat4.Text = "0"
         '
         'Achieve1
         '
@@ -370,6 +371,7 @@ Partial Class Stats
         Me.Controls.Add(Me.DisposeMe)
         Me.Controls.Add(Me.PictureBox8)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Stats"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Statistics"

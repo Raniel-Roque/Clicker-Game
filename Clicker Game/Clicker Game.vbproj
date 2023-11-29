@@ -85,6 +85,12 @@
     <Compile Include="ClickerMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GData.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClickerMain.resx">
       <DependentUpon>ClickerMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -355,6 +364,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bongo Cat Song - CG5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credits.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

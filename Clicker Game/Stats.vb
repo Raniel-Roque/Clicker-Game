@@ -2,7 +2,6 @@
 Public Class Stats
     Private Sub Stats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DisposeMe.Focus()
-        DisposeMe.Dispose()
         Me.MaximizeBox = False
 
         Stat1.Text = String.Format("{0:N0}", GData.Click)
