@@ -61,6 +61,12 @@ Public Class Shop2
     End Sub
     Private Sub UP8_Click(sender As Object, e As EventArgs) Handles UP8.Click
         If Money - Costs(7) >= 0 Then
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to Ascend? It would reset every cash purchase you have made. Ascencion Coin and Upgrade will remain. You will gain +1 ASC Coin", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+            If result = DialogResult.No Then
+                Return
+            End If
+
             If GData.Achievement(3) = False Then
                 GData.Achievement(3) = True
             End If
@@ -128,5 +134,13 @@ Public Class Shop2
         ShopCosmetic.Show()
         ShopCosmetic.BringToFront()
         Me.Hide()
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Settings_Click(sender As Object, e As EventArgs) Handles Settings.Click
+
     End Sub
 End Class

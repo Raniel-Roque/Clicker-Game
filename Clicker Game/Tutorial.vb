@@ -22,6 +22,12 @@ Public Class Tutorial
     End Sub
 
     Private Sub Skip(sender As Object, e As EventArgs) Handles PictureBox2.Click, PictureBox4.Click, PictureBox6.Click, PictureBox8.Click, PictureBox10.Click, PictureBox12.Click, PictureBox14.Click, PictureBox15.Click, PictureBox16.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to skip tutorial?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+        If result = DialogResult.No Then
+            Return
+        End If
+
         If SettingsMainOpen Is Nothing OrElse SettingsMainOpen.IsDisposed Then
             SettingsMainOpen = New SettingsMain
         End If

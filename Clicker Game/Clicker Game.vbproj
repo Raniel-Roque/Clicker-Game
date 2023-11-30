@@ -88,6 +88,12 @@
     <Compile Include="ClickerMain.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Congrats.Designer.vb">
+      <DependentUpon>Congrats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Congrats.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Credits.Designer.vb">
       <DependentUpon>Credits.vb</DependentUpon>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClickerMain.resx">
       <DependentUpon>ClickerMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Congrats.resx">
+      <DependentUpon>Congrats.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Credits.resx">
       <DependentUpon>Credits.vb</DependentUpon>
@@ -395,6 +404,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon_Cat.ico" />
+    <None Include="Resources\Grats.png" />
     <None Include="Resources\T7.png" />
     <None Include="Resources\Okay.png" />
     <None Include="Resources\Skip.png" />

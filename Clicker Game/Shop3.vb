@@ -121,6 +121,12 @@ Public Class Shop3
     End Sub
     Private Sub UP12_Click(sender As Object, e As EventArgs) Handles UP12.Click
         If Asc - Costs(11) >= 0 Then
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to rebirth and finish the game? It would reset every purchase you have made and any currency gained.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+            If result = DialogResult.No Then
+                Return
+            End If
+
             If GData.Achievement(4) = False Then
                 GData.Achievement(4) = True
             End If
@@ -153,11 +159,8 @@ Public Class Shop3
             TopMoneyLabel.Text = String.Format("{0:N0}", GData.Money)
             GData.Display()
 
-            Shop.Dispose()
-            Shop2.Dispose()
-            ShopCosmetic.Dispose()
-            ClickerMain.Show()
-            ClickerMain.BringToFront()
+            Congrats.Show()
+            Congrats.BringToFront()
             Me.Dispose()
         End If
     End Sub
