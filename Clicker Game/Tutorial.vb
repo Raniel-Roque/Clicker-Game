@@ -21,8 +21,8 @@ Public Class Tutorial
         SettingsMainOpen.Show()
     End Sub
 
-    Private Sub Skip(sender As Object, e As EventArgs) Handles PictureBox2.Click, PictureBox4.Click, PictureBox6.Click, PictureBox8.Click, PictureBox10.Click, PictureBox12.Click, PictureBox14.Click, PictureBox15.Click, PictureBox16.Click
-        Dim result As DialogResult = MessageBox.Show("Are you sure you want to skip tutorial?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+    Private Sub Skip(sender As Object, e As EventArgs) Handles PictureBox2.Click, PictureBox4.Click, PictureBox6.Click, PictureBox8.Click, PictureBox10.Click, PictureBox12.Click, PictureBox14.Click, PictureBox16.Click
+        Dim result As DialogResult = MessageBox.Show("Are you sure you want to skip tutorial?", "Skip Tutorial", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If result = DialogResult.No Then
             Return
@@ -63,5 +63,15 @@ Public Class Tutorial
     End Sub
     Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
         ChangePictureBoxes(PictureBox13, PictureBox14, PictureBox15, PictureBox16, My.Resources.T8)
+    End Sub
+
+    Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+        If SettingsMainOpen Is Nothing OrElse SettingsMainOpen.IsDisposed Then
+            SettingsMainOpen = New SettingsMain
+        End If
+
+        SettingsMainOpen.BringToFront()
+        SettingsMainOpen.Show()
+        Me.Dispose()
     End Sub
 End Class

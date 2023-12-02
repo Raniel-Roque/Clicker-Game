@@ -6,7 +6,7 @@
     'Main Money
     Public Money As ULong = 0UL
     Public Click As ULong = 1UL
-    Public Asc As ULong = 50UL
+    Public Asc As ULong = 0UL
     Public AscCount As ULong = 0UL
     Public Rebirth As ULong = 0UL
     Public FirstClick As Boolean = False

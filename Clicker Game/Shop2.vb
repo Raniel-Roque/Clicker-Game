@@ -61,7 +61,7 @@ Public Class Shop2
     End Sub
     Private Sub UP8_Click(sender As Object, e As EventArgs) Handles UP8.Click
         If Money - Costs(7) >= 0 Then
-            Dim result As DialogResult = MessageBox.Show("Are you sure you want to Ascend? It would reset every cash purchase you have made. Ascencion Coin and Upgrade will remain. You will gain +1 ASC Coin", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to Ascend? It would reset every cash purchase you have made. Ascencion Coin and Upgrade will remain. You will gain +1 ASC Coin", "Ascenscion Disclaimer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
             If result = DialogResult.No Then
                 Return

@@ -121,7 +121,7 @@ Public Class Shop3
     End Sub
     Private Sub UP12_Click(sender As Object, e As EventArgs) Handles UP12.Click
         If Asc - Costs(11) >= 0 Then
-            Dim result As DialogResult = MessageBox.Show("Are you sure you want to rebirth and finish the game? It would reset every purchase you have made and any currency gained.", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+            Dim result As DialogResult = MessageBox.Show("Are you sure you want to rebirth and finish the game? It would reset every purchase you have made and any currency gained.", "Rebirth Disclaimer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
             If result = DialogResult.No Then
                 Return
